@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACP,OAAO,EAAE,QAAQ",
+"sources": ["catalog.scss"],
+"names": [],
+"file": "catalog.css"
+}

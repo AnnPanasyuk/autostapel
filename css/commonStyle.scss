@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .container {
   width: 1145px;
   margin: 0 auto;
@@ -19,4 +22,12 @@ a, button {
   &:hover, &:active, &:focus {
     outline: none;
   }
+}
+%h2 {
+  text-align: center;
+  margin: 0 0 50px;
+  color: #1d1d1d;
+  font-family: 'latobold', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
 }

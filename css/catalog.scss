@@ -1,0 +1,101 @@
+.catalog {
+  padding: 65px 0 30px;
+  position: relative;
+  h2 {
+    @extend %h2;
+  }
+  .hexagon-1 {
+    position: absolute;
+    width: 312px;
+    height: 314px;
+    top: 320px;
+    left: 20px;
+    z-index: -1;
+  }
+  .hexagon-2 {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    z-index: -1;
+    width: 378px;
+    height: 368px;
+  }
+  .flex-ct {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 342px;
+    margin: 0 25px 50px;
+    .img-ct {
+      width: 100%;
+      height: 412px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 22px 46px rgba(20, 20, 20, 0.13);
+      background-color: #ffffff;
+      img {
+        align-self: center;
+      }
+      .st-img-1 {
+        width: 341px;
+        height: 290px;
+      }
+      .st-img-2 {
+        width: 342px;
+        height: 300px;
+      }
+      .st-img-3 {
+        width: 288px;
+        height: 270px;
+      }
+      .st-img-4 {
+        width: 314px;
+        height: 259px;
+      }
+      .st-img-5 {
+        width: 343px;
+        height: 321px;
+      }
+    }
+    .desc-ct {
+      width: 280px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      border-radius: 0 0 5px 5px;
+      background-color: #547ebc;
+      p {
+        align-self: center;
+        color: #ffffff;
+        font-family: 'latobold', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+  }
+  .btn-ct {
+    button {
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 6px 6px rgba(255, 222, 0, 0.29);
+      background-color: #ffde00;
+      padding: 22px 70px;
+      color: #1d1d1d;
+      font-family: 'latobold', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 5px;
+      border: none;
+      line-height: 1;
+      line-height: 22px;
+      transition: .3s;
+      &:hover {
+        background-color: orange;
+      }
+    }
+  }
+}

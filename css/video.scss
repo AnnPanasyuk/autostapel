@@ -1,0 +1,41 @@
+.video {
+  padding: 30px 0 0;
+  position: relative;
+  h2 {
+    @extend %h2;
+  }
+  .hexagon-1 {
+    position: absolute;
+    width: 312px;
+    height: 314px;
+    z-index: -1;
+    top: -100px;
+    right: -40px;
+  }
+  .video_desc {
+    color: #1d1d1d;
+    font-family: 'latobold', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 15px 0 55px;
+  }
+  .video-ct {
+    iframe {
+      display: block;
+      width: 948px;
+      height: 518px;
+      margin: 0 auto;
+      background-color: #181818;
+      //opacity: 0.59;
+    }
+    p {
+      color: #1d1d1d;
+      font-family: 'latobold', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 20px 0 55px;
+      text-align: center;
+    }
+  }
+}

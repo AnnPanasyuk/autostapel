@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .container {
   width: 1145px;
   margin: 0 auto;
@@ -19,6 +23,15 @@ a:hover, button:hover {
 
 *:hover, *:active, *:focus {
   outline: none;
+}
+
+.advantages h2, .catalog h2, .video h2, .demonstration h2 {
+  text-align: center;
+  margin: 0 0 50px;
+  color: #1d1d1d;
+  font-family: 'latobold', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 @font-face {
@@ -484,15 +497,7 @@ header .phone-ct .link-ct a:hover {
 }
 
 .advantages {
-  padding: 50px 0 0;
-}
-.advantages h2 {
-  text-align: center;
-  margin: 0 0 50px;
-  color: #1d1d1d;
-  font-family: 'latobold', sans-serif;
-  font-size: 36px;
-  font-weight: 700;
+  padding: 50px 0 40px;
 }
 .advantages .flex-ct {
   display: flex;
@@ -526,6 +531,7 @@ header .phone-ct .link-ct a:hover {
 .advantages .adv-ct .img-ct {
   align-self: center;
   width: 175px;
+  position: relative;
 }
 .advantages .adv-ct .img-ct img {
   width: 100%;
@@ -555,6 +561,183 @@ header .phone-ct .link-ct a:hover {
 }
 .advantages .adv-right-ct .img-ct {
   margin: 0 20px 0 0;
+}
+.advantages .line {
+  width: 44px;
+  border-bottom: 3px dotted #9cb5da;
+  position: absolute;
+}
+.advantages .line-1 {
+  transform: rotate(50deg);
+  bottom: 8px;
+  right: 8px;
+}
+.advantages .line-2 {
+  transform: rotate(130deg);
+  bottom: 8px;
+  left: 8px;
+}
+.advantages .line-3 {
+  top: 49%;
+  right: -46px;
+}
+.advantages .line-4 {
+  top: 49%;
+  left: -46px;
+}
+.advantages .line-5 {
+  top: 0;
+  right: 8px;
+  transform: rotate(130deg);
+}
+.advantages .line-6 {
+  top: 0;
+  left: 8px;
+  transform: rotate(50deg);
+}
+
+.catalog {
+  padding: 65px 0 30px;
+  position: relative;
+}
+.catalog .hexagon-1 {
+  position: absolute;
+  width: 312px;
+  height: 314px;
+  top: 320px;
+  left: 20px;
+  z-index: -1;
+}
+.catalog .hexagon-2 {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  z-index: -1;
+  width: 378px;
+  height: 368px;
+}
+.catalog .flex-ct {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.catalog .card {
+  width: 342px;
+  margin: 0 25px 50px;
+}
+.catalog .card .img-ct {
+  width: 100%;
+  height: 412px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 22px 46px rgba(20, 20, 20, 0.13);
+  background-color: #ffffff;
+}
+.catalog .card .img-ct img {
+  align-self: center;
+}
+.catalog .card .img-ct .st-img-1 {
+  width: 341px;
+  height: 290px;
+}
+.catalog .card .img-ct .st-img-2 {
+  width: 342px;
+  height: 300px;
+}
+.catalog .card .img-ct .st-img-3 {
+  width: 288px;
+  height: 270px;
+}
+.catalog .card .img-ct .st-img-4 {
+  width: 314px;
+  height: 259px;
+}
+.catalog .card .img-ct .st-img-5 {
+  width: 343px;
+  height: 321px;
+}
+.catalog .card .desc-ct {
+  width: 280px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 0 0 5px 5px;
+  background-color: #547ebc;
+}
+.catalog .card .desc-ct p {
+  align-self: center;
+  color: #ffffff;
+  font-family: 'latobold', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.catalog .btn-ct button {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 6px 6px rgba(255, 222, 0, 0.29);
+  background-color: #ffde00;
+  padding: 22px 70px;
+  color: #1d1d1d;
+  font-family: 'latobold', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  line-height: 1;
+  line-height: 22px;
+  transition: .3s;
+}
+.catalog .btn-ct button:hover {
+  background-color: orange;
+}
+
+.video {
+  padding: 30px 0 0;
+  position: relative;
+}
+.video .hexagon-1 {
+  position: absolute;
+  width: 312px;
+  height: 314px;
+  z-index: -1;
+  top: -100px;
+  right: -40px;
+}
+.video .video_desc {
+  color: #1d1d1d;
+  font-family: 'latobold', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 15px 0 55px;
+}
+.video .video-ct iframe {
+  display: block;
+  width: 948px;
+  height: 518px;
+  margin: 0 auto;
+  background-color: #181818;
+}
+.video .video-ct p {
+  color: #1d1d1d;
+  font-family: 'latobold', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0 55px;
+  text-align: center;
+}
+
+.demonstration {
+  padding: 50px 0;
+}
+.demonstration .img-ct {
+  width: 82%;
+  margin: 0 auto;
+}
+.demonstration .img-ct img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
