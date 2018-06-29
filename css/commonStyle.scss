@@ -1,0 +1,22 @@
+.container {
+  width: 1145px;
+  margin: 0 auto;
+  @media (min-width: 320px) and (max-width: 1440px) {
+    width: 78%;
+  }
+  @media (min-width: 320px) and (max-width: 1366px) {
+    width: 84%;
+  }
+}
+
+a, button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+* {
+  &:hover, &:active, &:focus {
+    outline: none;
+  }
+}

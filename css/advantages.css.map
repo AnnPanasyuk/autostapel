@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAY;EACV,OAAO,EAAE,QAAQ;EACjB,cAAG;IACD,UAAU,EAAE,MAAM",
+"sources": ["advantages.scss"],
+"names": [],
+"file": "advantages.css"
+}

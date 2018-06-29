@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAc;EACZ,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,QAAQ;EACjB,oCAAuB;IACrB,gBAAgB,EAAE,OAAO;IACzB,MAAM,EAAE,KAAK",
+"sources": ["consultation.scss"],
+"names": [],
+"file": "consultation.css"
+}

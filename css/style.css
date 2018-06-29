@@ -1,0 +1,560 @@
+.container {
+  width: 1145px;
+  margin: 0 auto;
+}
+@media (min-width: 320px) and (max-width: 1440px) {
+  .container {
+    width: 78%;
+  }
+}
+@media (min-width: 320px) and (max-width: 1366px) {
+  .container {
+    width: 84%;
+  }
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+}
+
+*:hover, *:active, *:focus {
+  outline: none;
+}
+
+@font-face {
+  font-family: 'latothin';
+  src: url("../fonts/lato-thin.eot");
+  src: url("../fonts/lato-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-thin.woff") format("woff"), url("../fonts/lato-thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latolight';
+  src: url("../fonts/lato-light.eot");
+  src: url("../fonts/lato-light.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-light.woff") format("woff"), url("../fonts/lato-light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/lato-regular.eot");
+  src: url("../fonts/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-regular.woff") format("woff"), url("../fonts/lato-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latomedium';
+  src: url("../fonts/lato-medium.eot");
+  src: url("../fonts/lato-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-medium.woff") format("woff"), url("../fonts/lato-medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latosemibold';
+  src: url("../fonts/lato-semibold.eot");
+  src: url("../fonts/lato-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-semibold.woff") format("woff"), url("../fonts/lato-semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latobold';
+  src: url("../fonts/lato-bold.eot");
+  src: url("../fonts/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bold.woff") format("woff"), url("../fonts/lato-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoheavy';
+  src: url("../fonts/lato-heavy.eot");
+  src: url("../fonts/lato-heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-heavy.woff") format("woff"), url("../fonts/lato-heavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoblack';
+  src: url("../fonts/lato-black.eot");
+  src: url("../fonts/lato-black.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-black.woff") format("woff"), url("../fonts/lato-black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latothin_italic';
+  src: url("../fonts/lato-thinitalic.eot");
+  src: url("../fonts/lato-thinitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-thinitalic.woff") format("woff"), url("../fonts/lato-thinitalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latolight_italic';
+  src: url("../fonts/lato-lightitalic.eot");
+  src: url("../fonts/lato-lightitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-lightitalic.woff") format("woff"), url("../fonts/lato-lightitalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoitalic';
+  src: url("../fonts/lato-italic.eot");
+  src: url("../fonts/lato-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-italic.woff") format("woff"), url("../fonts/lato-italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latomedium_italic';
+  src: url("../fonts/lato-mediumitalic.eot");
+  src: url("../fonts/lato-mediumitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-mediumitalic.woff") format("woff"), url("../fonts/lato-mediumitalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latosemibold_italic';
+  src: url("../fonts/lato-semibolditalic.eot");
+  src: url("../fonts/lato-semibolditalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-semibolditalic.woff") format("woff"), url("../fonts/lato-semibolditalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latobold_italic';
+  src: url("../fonts/lato-bolditalic.eot");
+  src: url("../fonts/lato-bolditalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bolditalic.woff") format("woff"), url("../fonts/lato-bolditalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoheavy_italic';
+  src: url("../fonts/lato-heavyitalic.eot");
+  src: url("../fonts/lato-heavyitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-heavyitalic.woff") format("woff"), url("../fonts/lato-heavyitalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoblack_italic';
+  src: url("../fonts/lato-blackitalic.eot");
+  src: url("../fonts/lato-blackitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-blackitalic.woff") format("woff"), url("../fonts/lato-blackitalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latohairline';
+  src: url("../fonts/lato-hairline.eot");
+  src: url("../fonts/lato-hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-hairline.woff") format("woff"), url("../fonts/lato-hairline.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latohairline_italic';
+  src: url("../fonts/lato-hairlineitalic.eot");
+  src: url("../fonts/lato-hairlineitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-hairlineitalic.woff") format("woff"), url("../fonts/lato-hairlineitalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaA-Regular';
+  src: url("../fonts/ProximaNovaA-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaA-Regular.woff") format("woff"), url("../fonts/ProximaNovaA-Regular.ttf") format("truetype"), url("../fonts/ProximaNovaA-Regular.svg#ProximaNovaA-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  background-color: #252525;
+  padding: 18px 0 20px;
+}
+header .flex-ct {
+  display: flex;
+  justify-content: space-between;
+}
+header .flex-ct .main-text-ct {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+header .flex-ct .main-phone-ct {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+header .text-ct {
+  display: flex;
+  align-self: center;
+}
+header .text-ct h2 {
+  align-self: center;
+  color: #ffde00;
+  font-family: 'latoblack_italic', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 12px 0 0;
+}
+header .text-ct svg {
+  margin: 0 11px 0 0;
+}
+header .text-ct p {
+  color: #ffffff;
+  font-family: 'latolight', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+}
+header .phone-ct .phone-number {
+  display: flex;
+  margin: 0 0 15px;
+}
+header .phone-ct svg {
+  margin: 0 6px 0 0;
+}
+header .phone-ct p {
+  align-self: center;
+  color: #ffffff;
+  font-family: 'latoblack', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+}
+header .phone-ct .link-ct a {
+  color: #ffde00;
+  font-family: 'latolight', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  text-decoration: underline;
+  transition: .3s;
+}
+header .phone-ct .link-ct a:hover {
+  text-shadow: 1px 1px 2px orange, 0 0 1em white;
+}
+
+.top-content {
+  background: url("../img/top-content-bg.png") no-repeat 50% 100%;
+  background-size: cover;
+  padding: 95px 0 50px;
+}
+.top-content h2 {
+  text-align: center;
+  color: #212121;
+  font-family: 'latoblack', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 51px;
+}
+.top-content h2 span {
+  color: #547ebc;
+}
+.top-content .flex-ct {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.top-content .text-ct {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.top-content .text-ct .deliver-text {
+  margin: 15px 0 60px;
+  text-align: center;
+  color: #212121;
+  font-family: 'latolight', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 16px;
+}
+.top-content .text-ct .advantages-items ul {
+  display: flex;
+}
+.top-content .text-ct .advantages-items ul li {
+  display: flex;
+  margin: 0 15px 0 0;
+}
+.top-content .text-ct .advantages-items ul li svg {
+  fill: #547ebc;
+  margin: 0 2px 0 0;
+}
+.top-content .text-ct .advantages-items ul li p {
+  color: #212121;
+  font-family: 'latosemibold', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.top-content .stock-ct {
+  width: 40%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 320px) and (max-width: 1366px) {
+  .top-content .stock-ct {
+    justify-content: flex-start;
+  }
+}
+.top-content .stock-ct .card {
+  width: 375px;
+  background-color: #ffffff;
+  box-shadow: 0 22px 46px rgba(20, 20, 20, 0.13);
+  display: flex;
+  padding: 0 0 28px;
+  flex-direction: column;
+}
+.top-content .stock-ct .card .caption-ct {
+  background-color: #547ebc;
+  width: 100%;
+}
+.top-content .stock-ct .card .caption-ct p {
+  padding: 25px 0;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'latoblack', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.top-content .stock-ct .card .term {
+  text-align: center;
+  color: #547ebc;
+  font-family: 'latoblack', sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 33px 0 25px;
+}
+.top-content .stock-ct .card button {
+  width: 303px;
+  height: 56px;
+  border-radius: 5px;
+  align-self: center;
+  box-shadow: 0 6px 6px rgba(255, 222, 0, 0.29);
+  background-color: #ffde00;
+  border: none;
+  color: #1d1d1d;
+  font-family: 'latobold', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  transition: .3s;
+}
+.top-content .stock-ct .card button:hover {
+  background-color: orange;
+}
+.top-content .img-ct {
+  width: 60%;
+}
+.top-content .img-ct img {
+  width: 100%;
+}
+
+.consultation {
+  background-color: #ffffff;
+  padding: 0 0 27px;
+}
+.consultation .top-other-color-block {
+  background-color: #547ebc;
+  height: 106px;
+}
+.consultation .flex-ct {
+  width: 90%;
+  margin: -135px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 320px) and (max-width: 1366px) {
+  .consultation .flex-ct {
+    width: 100%;
+  }
+}
+.consultation .left-ct {
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+}
+.consultation .left-ct img {
+  width: 100%;
+}
+.consultation .left-ct .desc-ct {
+  align-self: center;
+  box-shadow: 0 16px 51px rgba(84, 126, 188, 0.23);
+  background-color: #ffffff;
+  border-radius: 55px;
+  margin: -130px 0 0;
+  padding: 30px 40px;
+}
+.consultation .left-ct .desc-ct p {
+  color: #202020;
+  font-family: 'latoregular', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.consultation .left-ct .desc-ct p:first-child {
+  color: #202020;
+  font-family: 'latobold', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.consultation .right-ct {
+  width: 50%;
+  padding: 50px 0 0;
+}
+.consultation .right-ct .text-ct h2 {
+  color: #ffffff;
+  line-height: 35px;
+  font-family: 'latoblack', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 0 30px;
+}
+.consultation .right-ct .text-ct h2 span {
+  font-family: 'latolight', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+.consultation .right-ct .text-ct ul li {
+  display: flex;
+  margin: 10px 0;
+}
+.consultation .right-ct .text-ct ul li .number {
+  margin: 0 10px 0 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgba(84, 126, 188, 0.3);
+  border: 1px solid #547ebc;
+  background-color: #ffffff;
+  color: #547ebc;
+  font-family: 'latoheavy', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 24px;
+}
+.consultation .right-ct .text-ct ul li .desc {
+  color: #1d1d1d;
+  align-self: center;
+  font-family: 'latoregular', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.consultation .right-ct .form-ct {
+  width: 325px;
+  box-shadow: 0 22px 46px rgba(20, 20, 20, 0.13);
+  background-color: #ffffff;
+  padding: 16px 30px 15px;
+  border-radius: 5px;
+  margin: 10px 0 0;
+}
+.consultation .right-ct .form-ct form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 0 20px 60px;
+  color: #d0d0d0;
+  font-family: 'ProximaNovaA-Regular', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #c4c4c4;
+  background-color: #ffffff;
+  line-height: 22px;
+  margin: 4px 0;
+  border-radius: 5px;
+}
+.consultation .right-ct .form-ct form button {
+  width: 100%;
+  padding: 20px 0;
+  margin: 20px 0 15px;
+  box-shadow: 0 6px 6px rgba(255, 222, 0, 0.29);
+  background-color: #ffde00;
+  border-radius: 5px;
+  border: none;
+  color: #1d1d1d;
+  font-family: 'latobold', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.consultation .right-ct .form-ct form p {
+  text-align: center;
+  color: #5a5a5a;
+  font-family: 'ProximaNovaA-Regular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.consultation .right-ct .form-ct form p a {
+  color: #5a5a5a;
+  font-family: 'ProximaNovaA-Regular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-decoration: underline;
+}
+
+.advantages {
+  padding: 50px 0 0;
+}
+.advantages h2 {
+  text-align: center;
+  margin: 0 0 50px;
+  color: #1d1d1d;
+  font-family: 'latobold', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+.advantages .flex-ct {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages .row-2 {
+  margin: -42px 0 0;
+}
+.advantages .row-3 {
+  margin: -78px 0 0;
+}
+.advantages .adv-ct-1, .advantages .adv-ct-2 {
+  width: 45%;
+}
+.advantages .adv-ct-3, .advantages .adv-ct-4 {
+  width: 32%;
+}
+.advantages .adv-main-ct {
+  width: 33%;
+}
+.advantages .adv-main-ct img {
+  width: 100%;
+}
+.advantages .adv-ct {
+  display: flex;
+  align-self: center;
+}
+.advantages .adv-ct .text-ct {
+  align-self: center;
+}
+.advantages .adv-ct .img-ct {
+  align-self: center;
+  width: 175px;
+}
+.advantages .adv-ct .img-ct img {
+  width: 100%;
+}
+.advantages .adv-ct .caption {
+  color: #1d1d1d;
+  font-family: 'latobold', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.advantages .adv-ct .desc {
+  color: #1d1d1d;
+  font-family: 'latoregular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.advantages .adv-left-ct {
+  justify-content: flex-end;
+}
+.advantages .adv-left-ct .text-ct {
+  margin: 0 20px 0 0;
+}
+.advantages .adv-left-ct p {
+  text-align: end;
+}
+.advantages .adv-right-ct .img-ct {
+  margin: 0 20px 0 0;
+}
+
+/*# sourceMappingURL=style.css.map */

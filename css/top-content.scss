@@ -1,0 +1,116 @@
+.top-content {
+  background: url("../img/top-content-bg.png") no-repeat 50% 100%;
+  background-size: cover;
+  padding: 95px 0 50px;
+  h2 {
+    text-align: center;
+    color: #212121;
+    font-family: 'latoblack', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 51px;
+    span {
+      color: #547ebc;
+    }
+  }
+  .flex-ct {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .text-ct {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .deliver-text {
+      margin: 15px 0 60px;
+      text-align: center;
+      color: #212121;
+      font-family: 'latolight', sans-serif;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 16px;
+    }
+    .advantages-items {
+      ul {
+        display: flex;
+        li {
+          display: flex;
+          margin: 0 15px 0 0;
+          svg {
+            fill: #547ebc;
+            margin: 0 2px 0 0;
+          }
+          p {
+            color: #212121;
+            font-family: 'latosemibold', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .stock-ct {
+    width: 40%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    @media (min-width: 320px) and (max-width: 1366px) {
+      justify-content: flex-start;
+    }
+    .card {
+      width: 375px;
+      background-color: #ffffff;
+      box-shadow: 0 22px 46px rgba(20, 20, 20, 0.13);
+      display: flex;
+      padding: 0 0 28px;
+      flex-direction: column;
+      .caption-ct {
+        background-color: #547ebc;
+        width: 100%;
+        p {
+          padding: 25px 0;
+          text-align: center;
+          color: #ffffff;
+          font-family: 'latoblack', sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 16px;
+        }
+      }
+      .term {
+        text-align: center;
+        color: #547ebc;
+        font-family: 'latoblack', sans-serif;
+        font-size: 42px;
+        font-weight: 400;
+        margin: 33px 0 25px;
+      }
+      button {
+        width: 303px;
+        height: 56px;
+        border-radius: 5px;
+        align-self: center;
+        box-shadow: 0 6px 6px rgba(255, 222, 0, 0.29);
+        background-color: #ffde00;
+        border: none;
+        color: #1d1d1d;
+        font-family: 'latobold', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        transition: .3s;
+        &:hover {
+          background-color: orange;
+        }
+      }
+    }
+  }
+  .img-ct {
+    width: 60%;
+    img {
+      width: 100%;
+    }
+  }
+}

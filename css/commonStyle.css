@@ -1,0 +1,9 @@
+.container {
+  width: 1145px;
+  margin: 0 auto;
+  border: 1px solid red; }
+  @media screen and (max-width: 1440px) {
+    .container {
+      width: 85%; } }
+
+/*# sourceMappingURL=commonStyle.css.map */
