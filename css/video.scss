@@ -10,7 +10,10 @@
     height: 314px;
     z-index: -1;
     top: -100px;
-    right: -40px;
+    right: 0;
+    @media (min-width: 320px) and (max-width: 768px) {
+      display: none;
+    }
   }
   .video_desc {
     color: #1d1d1d;
@@ -28,6 +31,23 @@
       margin: 0 auto;
       background-color: #181818;
       //opacity: 0.59;
+      @media (min-width: 320px) and (max-width: 1100px) {
+        width: 100%;
+      }
+      @media (min-width: 320px) and (max-width: 1024px) {
+        width: 90%;
+        margin: 0 auto;
+        height: 425px;
+      }
+      @media (min-width: 320px) and (max-width: 768px) {
+        height: 350px;
+      }
+      @media (min-width: 320px) and (max-width: 568px) {
+        height: 270px;
+      }
+      @media (min-width: 320px) and (max-width: 375px) {
+        height: 200px;
+      }
     }
     p {
       color: #1d1d1d;

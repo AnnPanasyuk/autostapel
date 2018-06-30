@@ -1,3 +1,19 @@
 header {
   @extend %header_footer;
+  .text-ct {
+    @media (min-width: 320px) and (max-width: 425px) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .work {
+    @media (min-width: 320px) and (max-width: 425px) {
+      display: none!important;
+    }
+  }
+  .main-phone-ct {
+    @media (min-width: 320px) and (max-width: 425px) {
+      display: none!important;
+    }
+  }
 }

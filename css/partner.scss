@@ -7,6 +7,12 @@
     display: flex;
     justify-content: space-between;
     margin: 0 0 50px;
+    @media (min-width: 320px) and (max-width: 1024px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 90%;
+      margin: 0 auto 50px;
+    }
   }
   .img-ct {
     width: 197px;
@@ -16,6 +22,9 @@
     border-radius: 5px;
     display: flex;
     justify-content: center;
+    @media (min-width: 320px) and (max-width: 1024px) {
+      margin: 0 15px 20px;
+    }
     img {
       align-self: center;
     }

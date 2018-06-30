@@ -6,21 +6,51 @@
   .flex-ct {
     display: flex;
     justify-content: space-between;
+    @media (min-width: 320px) and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
   }
   .row-2 {
     margin: -42px 0 0;
+    @media (min-width: 320px) and (max-width: 1024px) {
+      margin: -30px 0 0;
+    }
   }
   .row-3 {
     margin: -78px 0 0;
+    @media (min-width: 320px) and (max-width: 1024px) {
+      margin: -55px 0 0;
+    }
   }
   .adv-ct-1, .adv-ct-2 {
     width: 45%;
+    .text-ct {
+      @media (min-width: 320px) and (max-width: 1024px) {
+        width: 60%;
+      }
+    }
   }
   .adv-ct-3, .adv-ct-4 {
     width: 32%;
+    .text-ct {
+      @media (min-width: 320px) and (max-width: 1024px) {
+        width: 75%;
+      }
+    }
   }
   .adv-main-ct {
     width: 33%;
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 45%;
+      margin: -40px auto 0;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin: -15px auto 0;
+    }
+    @media (min-width: 320px) and (max-width: 375px) {
+      margin: 0 auto;
+      width: 85%;
+    }
     img {
       width: 100%;
     }
@@ -28,6 +58,16 @@
   .adv-ct {
     display: flex;
     align-self: center;
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 100%;
+      margin: -50px 0 0;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin: -25px 0 0;
+    }
+    @media (min-width: 320px) and (max-width: 375px) {
+      margin: 10px 0;
+    }
     .text-ct {
       align-self: center;
     }
@@ -54,6 +94,11 @@
       line-height: 17px;
     }
   }
+  .first-adv-ct {
+    @media (min-width: 320px) and (max-width: 768px) {
+      margin: 0;
+    }
+  }
   .adv-left-ct {
     justify-content: flex-end;
     .text-ct {
@@ -72,6 +117,12 @@
     width: 44px;
     border-bottom: 3px dotted #9cb5da;
     position: absolute;
+    @media (min-width: 320px) and (max-width: 1024px) {
+      width: 36px;
+    }
+    @media (min-width: 320px) and (max-width: 768px) {
+      display: none;
+    }
   }
   .line-1 {
     transform: rotate(50deg);
@@ -85,11 +136,11 @@
   }
   .line-3 {
     top: 49%;
-    right: -46px;
+    right: -36px;
   }
   .line-4 {
     top: 49%;
-    left: -46px;
+    left: -36px;
   }
   .line-5 {
     top: 0;
@@ -100,5 +151,10 @@
     top: 0;
     left: 8px;
     transform: rotate(50deg);
+  }
+  .flex-ct {
+    @media (min-width: 320px) and (max-width: 768px) {
+      margin: 0;
+    }
   }
 }

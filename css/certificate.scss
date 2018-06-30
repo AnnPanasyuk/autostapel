@@ -4,29 +4,63 @@
   h2 {
     @extend %h2;
   }
+  .certificate-ct {
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 270px;
+      margin: 0 auto;
+    }
+  }
+  a {
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 100%;
+    }
+  }
   .certificate-img {
     display: block;
     margin: 0 auto;
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .hexagon {
+    @media (min-width: 320px) and (max-width: 480px) {
+      display: none;
+    }
   }
   .hexagon-1 {
     position: absolute;
+    z-index: -1;
     top: 40%;
     right: 40px;
     width: 312px;
     height: 314px;
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 150px;
+      height: 152px;
+    }
   }
   .hexagon-2 {
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 10px;
     width: 378px;
     height: 368px;
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 280px;
+      height: 265px;
+    }
   }
   .hexagon-3 {
     position: absolute;
+    z-index: -1;
     bottom: 4%;
     left: 20px;
     width: 312px;
     height: 314px;
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 150px;
+      height: 152px;
+    }
   }
 }

@@ -10,6 +10,9 @@ body {
   @media (min-width: 320px) and (max-width: 1366px) {
     width: 84%;
   }
+  @media (min-width: 320px) and (max-width: 768px) {
+    width: 92%;
+  }
 }
 
 a, button {
@@ -30,6 +33,9 @@ a, button {
   font-family: 'latobold', sans-serif;
   font-size: 36px;
   font-weight: 700;
+  @media (min-width: 320px) and (max-width: 667px) {
+    font-size: 30px;
+  }
 }
 
 %form {
@@ -53,6 +59,10 @@ a, button {
       line-height: 22px;
       margin: 4px 0;
       border-radius: 5px;
+      @media (min-width: 320px) and (max-width: 960px) {
+        text-align: center;
+        padding: 16px 0;
+      }
     }
     button {
       width: 100%;
@@ -89,23 +99,48 @@ a, button {
 %header_footer {
   background-color: #252525;
   padding: 18px 0 20px;
+  @media (min-width: 320px) and (max-width: 425px) {
+    padding: 5px 0;
+  }
   .flex-ct {
     display: flex;
     justify-content: space-between;
+    @media (min-width: 320px) and (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
     .main-text-ct {
       width: 60%;
       display: flex;
       justify-content: space-between;
+      @media (min-width: 320px) and (max-width: 1024px) {
+        width: 100%;
+      }
+      @media (min-width: 320px) and (max-width: 375px) {
+        flex-wrap: wrap;
+      }
+      .logo-ct {
+        display: block;
+        margin: 0 auto;
+      }
     }
     .main-phone-ct {
       width: 40%;
       display: flex;
       justify-content: flex-end;
+      @media (min-width: 320px) and (max-width: 1024px) {
+        width: 100%;
+        justify-content: center;
+      }
     }
   }
   .text-ct {
     display: flex;
     align-self: center;
+    @media (min-width: 320px) and (max-width: 375px) {
+      width: 100%;
+      justify-content: center;
+      margin: 0 0 8px;
+    }
     h2 {
       align-self: center;
       color: #ffde00;
@@ -113,6 +148,10 @@ a, button {
       font-size: 30px;
       font-weight: 400;
       margin: 0 12px 0 0;
+      @media (min-width: 320px) and (max-width: 375px) {
+        margin: 0;
+        text-align: center;
+      }
     }
     svg {
       margin: 0 11px 0 0;
@@ -124,11 +163,29 @@ a, button {
       font-weight: 300;
       line-height: 16px;
     }
+    .desc-ct {
+      p {
+        @media (min-width: 320px) and (max-width: 568px) {
+          display: none;
+        }
+      }
+    }
   }
   .phone-ct {
+    @media (min-width: 320px) and (max-width: 1024px) {
+      display: flex;
+      justify-content: center;
+    }
+    @media (min-width: 320px) and (max-width: 375px) {
+      flex-wrap: wrap;
+    }
     .phone-number {
       display: flex;
       margin: 0 0 15px;
+      @media (min-width: 320px) and (max-width: 1024px) {
+        margin: 0 15px 0 0;
+        order: 1;
+      }
     }
     svg {
       margin: 0 6px 0 0;
@@ -142,6 +199,9 @@ a, button {
       line-height: 16px;
     }
     .link-ct {
+      @media (min-width: 320px) and (max-width: 1024px) {
+        order: 2;
+      }
       a {
         color: #ffde00;
         font-family: 'latolight', sans-serif;
@@ -154,6 +214,26 @@ a, button {
           text-shadow: 1px 1px 2px orange, 0 0 1em white;
         }
       }
+    }
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  li {
+    width: 10px;
+    height: 10px;
+    background-color: #ffde00;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: .3s;
+    &:hover {
+      cursor: pointer;
+      background-color: orange;
+    }
+    button {
+      display: none;
     }
   }
 }

@@ -1,7 +1,13 @@
 .reviews {
   padding: 50px 0 40px;
+  @media (min-width: 320px) and (max-width: 667px) {
+    padding: 15px 0 30px;
+  }
   h2 {
     @extend %h2;
+    @media (min-width: 320px) and (max-width: 667px) {
+      margin: 0 0 20px;
+    }
   }
   .card {
     width: 92%;
@@ -11,20 +17,36 @@
     padding: 35px 40px;
     display: flex;
     justify-content: space-between;
+    @media (min-width: 320px) and (max-width: 768px) {
+      flex-wrap: wrap;
+      width: auto;
+    }
     .img-ct {
       width: 45%;
+      @media (min-width: 320px) and (max-width: 768px) {
+        order: 2;
+        margin: 0 auto;
+      }
       img {
         width: 100%;
       }
     }
     .text-ct {
       width: 50%;
+      @media (min-width: 320px) and (max-width: 768px) {
+        width: 100%;
+        order: 1;
+        margin: 0 0 20px;
+      }
       .caption {
         color: #547ebc;
         font-family: 'latobold', sans-serif;
         font-size: 22px;
         font-weight: 700;
         margin: 0 0 12px;
+        @media (min-width: 320px) and (max-width: 768px) {
+          text-align: center;
+        }
       }
       .desc {
         color: #1d1d1d;

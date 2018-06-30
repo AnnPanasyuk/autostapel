@@ -4,6 +4,12 @@
   .top-other-color-block {
     background-color: #547ebc;
     height: 106px;
+    @media (min-width: 769px) and (max-width: 960px) {
+      height: 160px;
+    }
+    @media (min-width: 320px) and (max-width: 425px) {
+      height: 170px;
+    }
   }
   .flex-ct {
     width: 90%;
@@ -13,11 +19,38 @@
     @media (min-width: 320px) and (max-width: 1366px) {
       width: 100%;
     }
+    @media (min-width: 320px) and (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+    @media (min-width: 769px) and (max-width: 960px) {
+      margin: -170px auto 0;
+    }
+    @media (min-width: 320px) and (max-width: 425px) {
+      margin: -153px auto 0;
+    }
   }
   .left-ct {
     width: 44%;
     display: flex;
     flex-direction: column;
+    @media (min-width: 320px) and (max-width: 1024px) {
+      order: 2;
+      width: 35%;
+      margin: -165px 0 0;
+    }
+    @media (min-width: 320px) and (max-width: 960px) {
+      margin: -120px 0 0;
+    }
+    @media (min-width: 320px) and (max-width: 768px) {
+      margin: -340px 0 0;
+    }
+    @media (min-width: 320px) and (max-width: 667px) {
+      margin: 30px auto 0;
+      width: 50%;
+    }
+    @media (min-width: 320px) and (max-width: 375px) {
+      width: 100%;
+    }
     img {
       width: 100%;
     }
@@ -28,6 +61,13 @@
       border-radius: 55px;
       margin: -130px 0 0;
       padding: 30px 40px;
+      @media (min-width: 320px) and (max-width: 1024px) {
+        padding: 20px 40px;
+      }
+      @media (min-width: 678px) and (max-width: 768px) {
+        margin: -70px auto 0;
+        padding: 20px 15px;
+      }
       p {
         color: #202020;
         font-family: 'latoregular', sans-serif;
@@ -41,6 +81,9 @@
           font-weight: 700;
           line-height: 20px;
         }
+        @media (min-width: 320px) and (max-width: 768px) {
+          text-align: center;
+        }
       }
     }
   }
@@ -48,7 +91,24 @@
     width: 50%;
     padding: 50px 0 0 25px;
     box-sizing: border-box;
+    @media (min-width: 320px) and (max-width: 1024px) {
+      order: 1;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 50px 0 0;
+    }
+    @media (min-width: 320px) and (max-width: 425px) {
+      padding: 0;
+    }
+    @media (min-width: 320px) and (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
     .text-ct {
+      @media (min-width: 320px) and (max-width: 768px) {
+        width: 100%;
+      }
       h2 {
         color: #ffffff;
         line-height: 35px;
@@ -56,10 +116,17 @@
         font-size: 40px;
         font-weight: 400;
         margin: 0 0 30px;
+        @media (min-width: 320px) and (max-width: 667px) {
+          font-size: 36px;
+          text-align: center;
+        }
         span {
           font-family: 'latolight', sans-serif;
           font-size: 30px;
           font-weight: 300;
+          @media (min-width: 320px) and (max-width: 667px) {
+            font-size: 26px;
+          }
         }
       }
       ul {
@@ -94,6 +161,11 @@
     }
     .form-ct {
       @extend %form;
+      margin: 45px 0 0;
+      @media (min-width: 320px) and (max-width: 667px) {
+        display: block;
+        margin: 0 auto;
+      }
     }
   }
   .card-percent {
@@ -105,6 +177,13 @@
     width: 90%;
     padding: 35px 70px;
     box-sizing: border-box;
+    @media (min-width: 320px) and (max-width: 1024px) {
+      margin: 50px auto 0;
+    }
+    @media (min-width: 320px) and (max-width: 667px) {
+      margin: 70px auto 0;
+      padding: 25px 40px;
+    }
     p {
       width: 60%;
       color: #1d1d1d;
@@ -112,6 +191,14 @@
       font-size: 30px;
       font-weight: 400;
       line-height: 35px;
+      @media (min-width: 320px) and (max-width: 667px) {
+        width: 75%;
+        font-size: 22px;
+        line-height: 1.2;
+      }
+      @media (min-width: 320px) and (max-width: 375px) {
+        width: 100%;
+      }
       span {
         color: #547ebc;
         font-family: 'latoblack', sans-serif;
@@ -124,6 +211,18 @@
       right: 0;
       width: 335px;
       height: 336px;
+      @media (min-width: 320px) and (max-width: 960px) {
+        width: 280px;
+        height: 280px;
+        top: -30px;
+      }
+      @media (min-width: 320px) and (max-width: 667px) {
+        width: 150px;
+        height: 150px;
+      }
+      @media (min-width: 320px) and (max-width: 375px) {
+        display: none;
+      }
       img {
         width: 100%;
       }
@@ -143,6 +242,12 @@
           font-family: 'latoblack', sans-serif;
           font-size: 110px;
           font-weight: 400;
+          @media (min-width: 320px) and (max-width: 960px) {
+            font-size: 70px;
+          }
+          @media (min-width: 320px) and (max-width: 667px) {
+            font-size: 30px;
+          }
         }
       }
     }
