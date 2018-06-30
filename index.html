@@ -54,7 +54,7 @@
                             <p>8-800-000-00-00</p>
                         </div>
                         <div class="link-ct">
-                            <a href="#">Заказать обратный звонок</a>
+                            <a id="form1_1" data-src="#pop-up-form" data-fancybox="" href="javascript:;">Заказать обратный звонок</a>
                         </div>
                     </div>
                 </div>
@@ -175,7 +175,9 @@
                             <p>НА СПЕЦИАЛЬНЫХ УСЛОВИЯХ</p>
                         </div>
                         <p class="term">ДО 15 ИЮЛЯ</p>
-                        <button>Я хочу знать об акции</button>
+                        <a id="some" data-src="#pop-up-some" data-fancybox="" href="javascript:;">
+                            <button>Я хочу знать об акции</button>
+                        </a>
                     </div>
                 </div>
                 <div class="img-ct">
@@ -223,7 +225,7 @@
                             <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
                             <button type="submit">Заказать консультацию</button>
                             <p>Нажимая кнопку я даю согласие на<br>
-                                <a href="">обработку персональных данных </a>
+                                <a id="politic3" data-fancybox="" data-src="#pop-up-politic" href="javascript:;">обработку персональных данных </a>
                             </p>
                         </form>
                     </div>
@@ -482,7 +484,7 @@
                             <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
                             <button type="submit">Заказать консультацию</button>
                             <p>Нажимая кнопку я даю согласие на<br>
-                                <a href="">обработку персональных данных </a>
+                                <a id="politic2" data-fancybox="" data-src="#pop-up-politic" href="javascript:;">обработку персональных данных </a>
                             </p>
                         </form>
                     </div>
@@ -523,7 +525,9 @@
                 </div>
             </div>
             <div class="btn-ct">
-                <button>Оставить заявку на расчет кредита/лизинга</button>
+                <a id="form1_3" data-src="#pop-up-form" data-fancybox="" href="javascript:;">
+                    <button>Оставить заявку на расчет кредита/лизинга</button>
+                </a>
             </div>
         </div>
     </div>
@@ -563,7 +567,7 @@
                             <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
                             <button type="submit">Заказать консультацию</button>
                             <p>Нажимая кнопку я даю согласие на<br>
-                                <a href="">обработку персональных данных </a>
+                                <a id="politic1" data-fancybox="" data-src="#pop-up-politic" href="javascript:;">обработку персональных данных </a>
                             </p>
                         </form>
                     </div>
@@ -648,13 +652,40 @@
                             <p>8-800-000-00-00</p>
                         </div>
                         <div class="link-ct">
-                            <a href="#">Заказать обратный звонок</a>
+                            <a id="form1_2" data-src="#pop-up-form" data-fancybox="" href="javascript:;">Заказать обратный звонок</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="pop-up-some" style="display: none;" id="pop-up-some">
+        <div class="containerForSome">
+            <h2>LOREM IPSUM</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur bibendum ornare. Nulla ultrices, metus ullamcorper luctus efficitur, est lorem dictum est, sodales pellentesque tellus odio ut metus. Aliquam erat volutpat. Phasellus dignissim in magna quis imperdiet. Nullam euismod tellus vel risus facilisis, ac laoreet lectus posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer rhoncus odio nisl, eu luctus risus sollicitudin eget. Praesent sem lacus, vestibulum sed dictum eget, semper ac turpis. Pellentesque suscipit viverra fringilla.</p>
+        </div>
+    </div>
+    <div class="pop-up-form" style="display: none;" id="pop-up-form">
+        <div class="containerForForm">
+            <div class="form-ct">
+                <form action="" method="POST">
+                    <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
+                    <input type="email" name="email" value="" placeholder="Введите Ваш email" required>
+                    <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
+                    <button type="submit">Заказать консультацию</button>
+                    <p>Нажимая кнопку я даю согласие на<br>
+                        <a id="politic" data-fancybox="" data-src="#pop-up-politic" href="javascript:;">обработку персональных данных </a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up-politic" style="display: none;" id="pop-up-politic">
+        <div class="containerForPolitic">
+            <h2>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur bibendum ornare. Nulla ultrices, metus ullamcorper luctus efficitur, est lorem dictum est, sodales pellentesque tellus odio ut metus. Aliquam erat volutpat. Phasellus dignissim in magna quis imperdiet. Nullam euismod tellus vel risus facilisis, ac laoreet lectus posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer rhoncus odio nisl, eu luctus risus sollicitudin eget. Praesent sem lacus, vestibulum sed dictum eget, semper ac turpis. Pellentesque suscipit viverra fringilla.</p>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/jquery.fancybox.js"></script>
     <script src="js/slick.js"></script>

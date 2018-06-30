@@ -30,6 +30,11 @@
     }
   }
   .btn-ct {
+    a {
+      display: block;
+      margin: 0 auto;
+      text-decoration: none;
+    }
     button {
       border: none;
       display: block;

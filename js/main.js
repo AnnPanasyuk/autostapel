@@ -3,9 +3,24 @@ $('[data-fancybox]').fancybox({
     protect: false
 });
 
+
+$(".containerForPolitic").fancybox({
+    selector: '[data-fancybox="#politic, #politic1, #politic2, #politic3"]',
+    loop: !0
+});
+
+$(".containerForSome").fancybox({
+    selector: '[data-fancybox="#some"]',
+    loop: !0
+});
+
+$(".containerForForm").fancybox({
+    selector: '[data-fancybox="#form1_1, #form1_2, #form1_3"]',
+    loop: !0
+});
+
+
 $.fancybox.defaults.animationEffect = "fade";
-
-
 
 if(screen.width <= 767) {
     $('.catalog .flex-ct-2 .card').appendTo('.catalog .flex-ct-1');

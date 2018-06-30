@@ -1,0 +1,10 @@
+.pop-up-form {
+  @extend %form;
+  input {
+    padding: 16px 0!important;
+    text-align: center!important;
+  }
+}
+@media (min-width: 100px) and (max-width: 480px) {
+  .pop-up-form {
+    width: 100%; } }
