@@ -27,7 +27,7 @@ $(".btn-ct button").on('click', function() {
             des +
             '</p>'+
             '</div>'+
-        </div>';
+        '</div>';
         $(".card:last").after(card);
         if($(".card").length == response.count_array) {
             $(".btn-ct button").remove();
