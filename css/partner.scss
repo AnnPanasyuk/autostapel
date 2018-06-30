@@ -1,0 +1,39 @@
+.partner {
+  padding: 40px 0 40px;
+  h2 {
+    @extend %h2;
+  }
+  .flex-ct {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 50px;
+  }
+  .img-ct {
+    width: 197px;
+    height: 89px;
+    border: 1px solid #dedede;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    img {
+      align-self: center;
+    }
+  }
+  .btn-ct {
+    button {
+      border: none;
+      display: block;
+      margin: 0 auto;
+      color: #1d1d1d;
+      font-family: 'latobold', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      box-shadow: 0 6px 6px rgba(255, 222, 0, 0.29);
+      background-color: #ffde00;
+      transition: .3s;
+      border-radius: 5px;
+      padding: 20px 35px;
+    }
+  }
+}
