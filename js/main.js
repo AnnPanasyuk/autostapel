@@ -25,3 +25,4 @@ function init(){
 $(document).ready(function(){
     ymaps.ready(init);
 });
+
