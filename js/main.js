@@ -22,8 +22,7 @@ function init(){
 // можно добавить на карту.
     myMap.geoObjects.add(myPlacemark);
 }
-
 $(document).ready(function(){
-
     ymaps.ready(init);
-})
+});
+

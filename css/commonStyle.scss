@@ -21,6 +21,10 @@ a, button {
   }
 }
 
+img {
+  pointer-events: none;
+}
+
 * {
   &:hover, &:active, &:focus {
     outline: none;
@@ -192,13 +196,18 @@ a, button {
     svg {
       margin: 0 6px 0 0;
     }
-    p {
+    a {
+      text-decoration: none;
       align-self: center;
       color: #ffffff;
       font-family: 'latoblack', sans-serif;
       font-size: 18px;
       font-weight: 400;
       line-height: 16px;
+      transition: .3s;
+      &:hover {
+        text-decoration: underline;
+      }
     }
     .link-ct {
       @media (min-width: 320px) and (max-width: 1024px) {
