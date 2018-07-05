@@ -17,6 +17,9 @@ body {
 a:hover, button:hover {
   cursor: pointer; }
 
+img {
+  pointer-events: none; }
+
 *:hover, *:active, *:focus {
   outline: none; }
 
@@ -161,13 +164,17 @@ header, footer {
         order: 1; } }
   header .phone-ct svg, footer .phone-ct svg {
     margin: 0 6px 0 0; }
-  header .phone-ct p, footer .phone-ct p {
+  header .phone-ct a, footer .phone-ct a {
+    text-decoration: none;
     align-self: center;
     color: #ffffff;
     font-family: 'latoblack', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 16px; }
+    line-height: 16px;
+    transition: .3s; }
+    header .phone-ct a:hover, footer .phone-ct a:hover {
+      text-decoration: underline; }
   @media (min-width: 320px) and (max-width: 1024px) {
     header .phone-ct .link-ct, footer .phone-ct .link-ct {
       order: 2; } }
@@ -708,7 +715,8 @@ header, footer {
         font-family: 'latoregular', sans-serif;
         font-size: 16px;
         font-weight: 400;
-        line-height: 18px; }
+        line-height: 18px;
+        width: calc(100% - 34px); }
     .consultation .right-ct .form-ct {
       margin: 45px 0 0; }
       @media (min-width: 320px) and (max-width: 667px) {
@@ -947,11 +955,12 @@ header, footer {
     justify-content: center;
     flex-wrap: wrap; }
   .catalog .card {
-    width: 342px;
+    width: calc(100% / 3.3);
     margin: 0 15px 50px; }
-    @media (min-width: 320px) and (max-width: 768px) {
+    @media (min-width: 320px) and (max-width: 480px) {
       .catalog .card {
-        width: 270px; } }
+        width: calc(100% / 2.2);
+        margin: 0 5px 20px; } }
     .catalog .card .img-ct {
       width: 100%;
       height: 412px;
@@ -962,43 +971,14 @@ header, footer {
       @media (min-width: 320px) and (max-width: 768px) {
         .catalog .card .img-ct {
           height: 325px; } }
+      @media (min-width: 320px) and (max-width: 480px) {
+        .catalog .card .img-ct {
+          height: 170px; } }
       .catalog .card .img-ct img {
+        width: 100%;
         align-self: center; }
-      .catalog .card .img-ct .st-img-1 {
-        width: 341px;
-        height: 290px; }
-        @media (min-width: 320px) and (max-width: 768px) {
-          .catalog .card .img-ct .st-img-1 {
-            width: 269px;
-            height: 229px; } }
-      .catalog .card .img-ct .st-img-2 {
-        width: 342px;
-        height: 300px; }
-        @media (min-width: 320px) and (max-width: 768px) {
-          .catalog .card .img-ct .st-img-2 {
-            width: 270px;
-            height: 237px; } }
       .catalog .card .img-ct .st-img-3 {
-        width: 288px;
-        height: 270px; }
-        @media (min-width: 320px) and (max-width: 768px) {
-          .catalog .card .img-ct .st-img-3 {
-            width: 227px;
-            height: 213px; } }
-      .catalog .card .img-ct .st-img-4 {
-        width: 314px;
-        height: 259px; }
-        @media (min-width: 320px) and (max-width: 768px) {
-          .catalog .card .img-ct .st-img-4 {
-            width: 248px;
-            height: 204px; } }
-      .catalog .card .img-ct .st-img-5 {
-        width: 343px;
-        height: 321px; }
-        @media (min-width: 320px) and (max-width: 768px) {
-          .catalog .card .img-ct .st-img-5 {
-            width: 270px;
-            height: 253px; } }
+        height: 100%; }
     .catalog .card .desc-ct {
       width: 280px;
       height: 60px;
@@ -1010,32 +990,41 @@ header, footer {
       @media (min-width: 320px) and (max-width: 768px) {
         .catalog .card .desc-ct {
           width: 100%; } }
-      .catalog .card .desc-ct p {
+      @media (min-width: 320px) and (max-width: 480px) {
+        .catalog .card .desc-ct {
+          height: 50px; } }
+      .catalog .card .desc-ct a {
         align-self: center;
         color: #ffffff;
         font-family: 'latobold', sans-serif;
         font-size: 20px;
         font-weight: 700;
-        text-align: center; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .catalog .btn-ct {
-      margin: 45px 0 0; } }
-  .catalog .btn-ct button {
-    display: block;
-    margin: 0 auto;
-    box-shadow: 0 6px 6px rgba(255, 222, 0, 0.29);
-    background-color: #ffde00;
-    padding: 22px 70px;
-    color: #1d1d1d;
-    font-family: 'latobold', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 5px;
-    border: none;
-    line-height: 22px;
-    transition: .3s; }
-    .catalog .btn-ct button:hover {
-      background-color: orange; }
+        text-align: center;
+        text-decoration: none; }
+        @media (min-width: 320px) and (max-width: 480px) {
+          .catalog .card .desc-ct a {
+            font-size: 14px; } }
+  .catalog .btn-ct {
+    display: flex;
+    justify-content: center; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .catalog .btn-ct {
+        margin: 45px 0 0; } }
+    .catalog .btn-ct a {
+      text-decoration: none;
+      box-shadow: 0 6px 6px rgba(255, 222, 0, 0.29);
+      background-color: #ffde00;
+      padding: 22px 70px;
+      color: #1d1d1d;
+      font-family: 'latobold', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 5px;
+      border: none;
+      line-height: 22px;
+      transition: .3s; }
+      .catalog .btn-ct a:hover {
+        background-color: orange; }
 
 .video {
   padding: 30px 0 0;
@@ -1187,8 +1176,16 @@ header, footer {
     @media (min-width: 320px) and (max-width: 1024px) {
       .partner .img-ct {
         margin: 0 15px 20px; } }
+    @media (min-width: 320px) and (max-width: 667px) {
+      .partner .img-ct {
+        margin: 0 5px 10px;
+        width: 45%;
+        height: 70px; } }
     .partner .img-ct img {
       align-self: center; }
+      @media (min-width: 320px) and (max-width: 667px) {
+        .partner .img-ct img {
+          width: 90%; } }
   .partner .btn-ct a {
     display: block;
     margin: 0 auto;
@@ -1380,8 +1377,16 @@ header, footer {
     @media (min-width: 320px) and (max-width: 1024px) {
       .delivery .img-ct {
         margin: 0 20px 30px; } }
+    @media (min-width: 320px) and (max-width: 667px) {
+      .delivery .img-ct {
+        margin: 0 5px 10px;
+        width: 45%;
+        height: 70px; } }
     .delivery .img-ct img {
       align-self: center; }
+      @media (min-width: 320px) and (max-width: 667px) {
+        .delivery .img-ct img {
+          width: 90%; } }
 
 .contact {
   padding: 40px 0 0; }

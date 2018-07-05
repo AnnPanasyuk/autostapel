@@ -5,7 +5,6 @@
     <title>Autostapel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
@@ -51,7 +50,7 @@
                                 </g>
                             </g>
                         </svg>
-                            <p>8-800-000-00-00</p>
+                            <a href="tel:8-800-000-00-00">8-800-000-00-00</a>
                         </div>
                         <div class="link-ct">
                             <a id="form1_1" data-src="#pop-up-form" data-fancybox="" href="javascript:;">Заказать обратный звонок</a>
@@ -332,7 +331,7 @@
                         <img class="st-img-1" src="img/st-img-1.png" alt="img">
                     </div>
                     <div class="desc-ct">
-                        <p>Платформенные стенды</p>
+                        <a data-src="#pop-up-form_c-1" data-fancybox="" href="javascript:;">Платформенные стенды</a>
                     </div>
                 </div>
                 <div class="card">
@@ -340,7 +339,7 @@
                         <img class="st-img-2" src="img/st-img-2.png" alt="img">
                     </div>
                     <div class="desc-ct">
-                        <p>Рамные стенды</p>
+                        <a data-src="#pop-up-form_c-2" data-fancybox="" href="javascript:;">Рамные стенды</a>
                     </div>
                 </div>
             </div>
@@ -350,8 +349,8 @@
                         <img class="st-img-3" src="img/st-img-3.png" alt="img">
                     </div>
                     <div class="desc-ct">
-                        <p>Доп. комплектующие<br>
-                            и аксессуары</p>
+                        <a data-src="#pop-up-form_c-3" data-fancybox="" href="javascript:;">Доп. комплектующие<br>
+                            и аксессуары</a>
                     </div>
                 </div>
                 <div class="card">
@@ -359,8 +358,8 @@
                         <img class="st-img-4" src="img/st-img-4.png" alt="img">
                     </div>
                     <div class="desc-ct">
-                        <p>Подкатные<br>
-                            устройства</p>
+                        <a data-src="#pop-up-form_c-4" data-fancybox="" href="javascript:;">Подкатные<br>
+                            устройства</a>
                     </div>
                 </div>
                 <div class="card">
@@ -368,13 +367,13 @@
                         <img class="st-img-5" src="img/st-img-5.png" alt="img">
                     </div>
                     <div class="desc-ct">
-                        <p>Напольные<br>
-                            стапели</p>
+                        <a data-src="#pop-up-form_c-5" data-fancybox="" href="javascript:;">Напольные<br>
+                            стапели</a>
                     </div>
                 </div>
             </div>
             <div class="btn-ct">
-                <button>Скачать каталог</button>
+                <a href="img/girl_programmer.png" download>Скачать каталог</a>
             </div>
         </div>
     </div>
@@ -606,8 +605,8 @@
         <div class="container">
             <h2>Наши контакты</h2>
             <p>ООО НПО «Звезда» Демонстрационный зал: г. Пушкино ул. Заводская д.19</p>
-            <div id="map" class="map"></div>
         </div>
+        <div id="map" class="map"></div>
     </div>
     <footer>
         <div class="container">
@@ -649,7 +648,7 @@
                                 </g>
                             </g>
                         </svg>
-                            <p>8-800-000-00-00</p>
+                            <a href="tel:8-800-000-00-00">8-800-000-00-00</a>
                         </div>
                         <div class="link-ct">
                             <a id="form1_2" data-src="#pop-up-form" data-fancybox="" href="javascript:;">Заказать обратный звонок</a>
@@ -663,7 +662,7 @@
         <div class="containerForSome">
             <div class="form-ct">
                 <h3>ОСТАВЬТЕ ЗАЯВКУ</h3>
-                <p class="hform_text">Заполните форму и наш специалист <br> ответит на все ваши вопросы</p>
+                <p class="hform_text">чтобы узнать, как сэкономить на покупке стенда ДО 6 ИЮЛЯ</p>
                 <form action="./ajax-programer.php" method="POST">
                     <div class="input input-name">
                         <div class="img-ct">
@@ -723,6 +722,166 @@
             </div>
         </div>
     </div>
+    <div class="pop-up-form" style="display: none;" id="pop-up-form_c-1">
+        <div class="containerForForm">
+            <div class="form-ct">
+                <h3>ОСТАВЬТЕ ЗАЯВКУ</h3>
+                <p class="hform_text">Заполните форму и наш специалист <br> ответит на все ваши вопросы</p>
+                <form action="./ajax-programer.php" method="POST">
+                    <div class="input input-name">
+                        <div class="img-ct">
+                            <img src="img/input-1-name.png" alt="name">
+                        </div>
+                        <input type="text" name="name" value="" placeholder="Введите Ваш имя" required>
+                    </div>
+                    <div class="input input-email">
+                        <div class="img-ct">
+                            <img src="img/input-1-email.png" alt="name">
+                        </div>
+                        <input type="email" name="email" value="" placeholder="Введите Ваш email" required>
+                    </div>
+                    <div class="input input-phone">
+                        <div class="img-ct">
+                            <img src="img/input-1-phone.png" alt="name">
+                        </div>
+                        <input type="tel" name="phone" value="" placeholder="Введите Ваш телефон" required>
+                    </div>
+                    <button class="form-btn" type="submit">Перезвоните мне</button>
+                    <p class="text-politic"> Даю согласие на <a id="politic_c-1" data-fancybox="" data-src="#pop-up-politic" href="javascript:;" target="_blank" class="dashed-link">обработку персональных данных</a></p>
+                    <p class="privacy">Гарантируем не использовать ваши данные
+                        в рекламных целях</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up-form" style="display: none;" id="pop-up-form_c-2">
+        <div class="containerForForm">
+            <div class="form-ct">
+                <h3>ОСТАВЬТЕ ЗАЯВКУ</h3>
+                <p class="hform_text">Заполните форму и наш специалист <br> ответит на все ваши вопросы</p>
+                <form action="./ajax-programer.php" method="POST">
+                    <div class="input input-name">
+                        <div class="img-ct">
+                            <img src="img/input-1-name.png" alt="name">
+                        </div>
+                        <input type="text" name="name" value="" placeholder="Введите Ваш имя" required>
+                    </div>
+                    <div class="input input-email">
+                        <div class="img-ct">
+                            <img src="img/input-1-email.png" alt="name">
+                        </div>
+                        <input type="email" name="email" value="" placeholder="Введите Ваш email" required>
+                    </div>
+                    <div class="input input-phone">
+                        <div class="img-ct">
+                            <img src="img/input-1-phone.png" alt="name">
+                        </div>
+                        <input type="tel" name="phone" value="" placeholder="Введите Ваш телефон" required>
+                    </div>
+                    <button class="form-btn" type="submit">Перезвоните мне</button>
+                    <p class="text-politic"> Даю согласие на <a id="politic_c-2" data-fancybox="" data-src="#pop-up-politic" href="javascript:;" target="_blank" class="dashed-link">обработку персональных данных</a></p>
+                    <p class="privacy">Гарантируем не использовать ваши данные
+                        в рекламных целях</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up-form" style="display: none;" id="pop-up-form_c-3">
+        <div class="containerForForm">
+            <div class="form-ct">
+                <h3>ОСТАВЬТЕ ЗАЯВКУ</h3>
+                <p class="hform_text">Заполните форму и наш специалист <br> ответит на все ваши вопросы</p>
+                <form action="./ajax-programer.php" method="POST">
+                    <div class="input input-name">
+                        <div class="img-ct">
+                            <img src="img/input-1-name.png" alt="name">
+                        </div>
+                        <input type="text" name="name" value="" placeholder="Введите Ваш имя" required>
+                    </div>
+                    <div class="input input-email">
+                        <div class="img-ct">
+                            <img src="img/input-1-email.png" alt="name">
+                        </div>
+                        <input type="email" name="email" value="" placeholder="Введите Ваш email" required>
+                    </div>
+                    <div class="input input-phone">
+                        <div class="img-ct">
+                            <img src="img/input-1-phone.png" alt="name">
+                        </div>
+                        <input type="tel" name="phone" value="" placeholder="Введите Ваш телефон" required>
+                    </div>
+                    <button class="form-btn" type="submit">Перезвоните мне</button>
+                    <p class="text-politic"> Даю согласие на <a id="politic_c-3" data-fancybox="" data-src="#pop-up-politic" href="javascript:;" target="_blank" class="dashed-link">обработку персональных данных</a></p>
+                    <p class="privacy">Гарантируем не использовать ваши данные
+                        в рекламных целях</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up-form" style="display: none;" id="pop-up-form_c-4">
+        <div class="containerForForm">
+            <div class="form-ct">
+                <h3>ОСТАВЬТЕ ЗАЯВКУ</h3>
+                <p class="hform_text">Заполните форму и наш специалист <br> ответит на все ваши вопросы</p>
+                <form action="./ajax-programer.php" method="POST">
+                    <div class="input input-name">
+                        <div class="img-ct">
+                            <img src="img/input-1-name.png" alt="name">
+                        </div>
+                        <input type="text" name="name" value="" placeholder="Введите Ваш имя" required>
+                    </div>
+                    <div class="input input-email">
+                        <div class="img-ct">
+                            <img src="img/input-1-email.png" alt="name">
+                        </div>
+                        <input type="email" name="email" value="" placeholder="Введите Ваш email" required>
+                    </div>
+                    <div class="input input-phone">
+                        <div class="img-ct">
+                            <img src="img/input-1-phone.png" alt="name">
+                        </div>
+                        <input type="tel" name="phone" value="" placeholder="Введите Ваш телефон" required>
+                    </div>
+                    <button class="form-btn" type="submit">Перезвоните мне</button>
+                    <p class="text-politic"> Даю согласие на <a id="politic_c-4" data-fancybox="" data-src="#pop-up-politic" href="javascript:;" target="_blank" class="dashed-link">обработку персональных данных</a></p>
+                    <p class="privacy">Гарантируем не использовать ваши данные
+                        в рекламных целях</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up-form" style="display: none;" id="pop-up-form_c-5">
+        <div class="containerForForm">
+            <div class="form-ct">
+                <h3>ОСТАВЬТЕ ЗАЯВКУ</h3>
+                <p class="hform_text">Заполните форму и наш специалист <br> ответит на все ваши вопросы</p>
+                <form action="./ajax-programer.php" method="POST">
+                    <div class="input input-name">
+                        <div class="img-ct">
+                            <img src="img/input-1-name.png" alt="name">
+                        </div>
+                        <input type="text" name="name" value="" placeholder="Введите Ваш имя" required>
+                    </div>
+                    <div class="input input-email">
+                        <div class="img-ct">
+                            <img src="img/input-1-email.png" alt="name">
+                        </div>
+                        <input type="email" name="email" value="" placeholder="Введите Ваш email" required>
+                    </div>
+                    <div class="input input-phone">
+                        <div class="img-ct">
+                            <img src="img/input-1-phone.png" alt="name">
+                        </div>
+                        <input type="tel" name="phone" value="" placeholder="Введите Ваш телефон" required>
+                    </div>
+                    <button class="form-btn" type="submit">Перезвоните мне</button>
+                    <p class="text-politic"> Даю согласие на <a id="politic_c-5" data-fancybox="" data-src="#pop-up-politic" href="javascript:;" target="_blank" class="dashed-link">обработку персональных данных</a></p>
+                    <p class="privacy">Гарантируем не использовать ваши данные
+                        в рекламных целях</p>
+                </form>
+            </div>
+        </div>
+    </div>
     <div class="pop-up-politic" style="display: none;" id="pop-up-politic">
         <div class="containerForPolitic">
             <h2>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h2>
@@ -731,8 +890,6 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/jquery.fancybox.js"></script>
-    <script src="js/reviews_fetch.js"></script>
-    <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
