@@ -44,7 +44,7 @@ a:hover, button:hover {
   }
 }
 
-.consultation .right-ct .form-ct, .order .text-ct .form-ct, .pop-up-form {
+.consultation .right-ct .form-ct, .order .text-ct .form-ct {
   width: 325px;
   box-shadow: 0 22px 46px rgba(20, 20, 20, 0.13);
   background-color: #ffffff;
@@ -52,7 +52,7 @@ a:hover, button:hover {
   border-radius: 5px;
   margin: 10px 0 0;
 }
-.consultation .right-ct .form-ct form input, .order .text-ct .form-ct form input, .pop-up-form form input {
+.consultation .right-ct .form-ct form input, .order .text-ct .form-ct form input {
   width: 100%;
   box-sizing: border-box;
   padding: 16px 0 16px 60px;
@@ -67,12 +67,12 @@ a:hover, button:hover {
   border-radius: 5px;
 }
 @media (min-width: 320px) and (max-width: 960px) {
-  .consultation .right-ct .form-ct form input, .order .text-ct .form-ct form input, .pop-up-form form input {
+  .consultation .right-ct .form-ct form input, .order .text-ct .form-ct form input {
     text-align: center;
     padding: 16px 0;
   }
 }
-.consultation .right-ct .form-ct form button, .order .text-ct .form-ct form button, .pop-up-form form button {
+.consultation .right-ct .form-ct form button, .order .text-ct .form-ct form button {
   width: 100%;
   padding: 17px 0;
   margin: 20px 0 15px;
@@ -85,7 +85,7 @@ a:hover, button:hover {
   font-size: 18px;
   font-weight: 700;
 }
-.consultation .right-ct .form-ct form p, .order .text-ct .form-ct form p, .pop-up-form form p {
+.consultation .right-ct .form-ct form p, .order .text-ct .form-ct form p {
   text-align: center;
   color: #5a5a5a;
   font-family: 'ProximaNovaA-Regular', sans-serif;
@@ -93,7 +93,7 @@ a:hover, button:hover {
   font-weight: 400;
   line-height: 17px;
 }
-.consultation .right-ct .form-ct form p a, .order .text-ct .form-ct form p a, .pop-up-form form p a {
+.consultation .right-ct .form-ct form p a, .order .text-ct .form-ct form p a {
   color: #5a5a5a;
   font-family: 'ProximaNovaA-Regular', sans-serif;
   font-size: 14px;
@@ -260,6 +260,115 @@ header .phone-ct .link-ct a:hover, footer .phone-ct .link-ct a:hover {
   display: none;
 }
 
+.pop-up-form, .pop-up-some {
+  border: 15px solid #3c5c97;
+  border-radius: 0;
+  width: 453px;
+  padding: 0 40px;
+}
+.pop-up-form h3, .pop-up-some h3 {
+  text-align: center;
+  padding-top: 10px;
+  font: bold 55px 'Bebas Neue';
+  letter-spacing: 0.9px;
+  color: #3c5c97;
+}
+.pop-up-form .hform_text, .pop-up-some .hform_text {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 21px;
+  line-height: 24px;
+  font-family: 'MetaPro-Normal', sans-serif;
+  font-weight: 600;
+}
+.pop-up-form .input, .pop-up-some .input {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0 0;
+}
+.pop-up-form .img-ct, .pop-up-some .img-ct {
+  width: 54px;
+  height: 58px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+}
+.pop-up-form .img-ct img, .pop-up-some .img-ct img {
+  align-self: center;
+}
+.pop-up-form input, .pop-up-some input {
+  border: none;
+  width: calc(100% - 95px);
+  padding: 15px 20px;
+  background-color: #f1f1f1;
+  font: 18px 'MetaPro-Normal';
+}
+.pop-up-form .form-btn, .pop-up-some .form-btn {
+  margin: 12px 0;
+  display: block;
+  width: 100%;
+  height: 66px;
+  font-size: 21px;
+  font-family: 'MetaPro-Normal', sans-serif;
+  font-weight: 600;
+  line-height: 60px;
+  color: #000;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  background: url("../img/button-10.png") no-repeat;
+}
+.pop-up-form .form-btn:hover, .pop-up-some .form-btn:hover {
+  border: none;
+  background-position: 0 -80px;
+}
+.pop-up-form .checkbox, .pop-up-some .checkbox {
+  position: relative;
+  margin: 0 auto 1em;
+  padding-left: 1.5rem;
+  width: 280px;
+}
+.pop-up-form .checkbox input[type="checkbox"], .pop-up-some .checkbox input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.pop-up-form .checkbox label, .pop-up-some .checkbox label {
+  color: #444;
+  font-family: 'MetaPro-Normal', sans-serif;
+  font-size: 12px;
+}
+.pop-up-form .checkbox label a, .pop-up-some .checkbox label a {
+  color: #444;
+  border-bottom: 1px dashed #444;
+  text-decoration: none;
+}
+.pop-up-form .checkbox label a:hover, .pop-up-some .checkbox label a:hover {
+  text-decoration: underline;
+}
+.pop-up-form .checkbox label::before, .pop-up-some .checkbox label::before {
+  content: '';
+  border-radius: .25rem;
+  background-color: #cecece;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+}
+.pop-up-form .checkbox .checkbox input:checked ~ label::before, .pop-up-some .checkbox .checkbox input:checked ~ label::before {
+  background-color: #3c5c97;
+}
+.pop-up-form .privacy, .pop-up-some .privacy {
+  font-size: 14px;
+  color: #727272;
+  text-align: center;
+  font-family: 'MetaPro-Normal', sans-serif;
+  margin: 0 0 15px;
+}
+
 @font-face {
   font-family: 'latothin';
   src: url("../fonts/lato-thin.eot");
@@ -389,6 +498,20 @@ header .phone-ct .link-ct a:hover, footer .phone-ct .link-ct a:hover {
 @font-face {
   font-family: 'ProximaNovaA-Regular';
   src: url("../fonts/ProximaNovaA-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaA-Regular.woff") format("woff"), url("../fonts/ProximaNovaA-Regular.ttf") format("truetype"), url("../fonts/ProximaNovaA-Regular.svg#ProximaNovaA-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeueBold.eot");
+  src: url("../fonts/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueBold.woff2") format("woff2"), url("../fonts/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeueBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MetaPro-Normal';
+  src: url("../fonts/MetaPro-Normal.eot");
+  src: url("../fonts/MetaPro-Normal.eot?#iefix") format("embedded-opentype"), url("../fonts/MetaPro-Normal.woff2") format("woff2"), url("../fonts/MetaPro-Normal.woff") format("woff"), url("../fonts/MetaPro-Normal.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -1825,77 +1948,57 @@ header .phone-ct .link-ct a:hover, footer .phone-ct .link-ct a:hover {
     width: 100%;
   }
 }
-.pop-up-form input {
-  padding: 16px 0 !important;
-  text-align: center !important;
-}
-
 @media (min-width: 100px) and (max-width: 480px) {
   .pop-up-form {
-    width: 100%;
+    width: 320px;
+    padding: 0 15px;
   }
-}
-.pop-up-some {
-  width: 65%;
-  margin: 0 auto;
-  background-color: #ffffff;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  padding: 0 !important;
-}
-
-.pop-up-some .containerForSome {
-  padding: 50px 35px;
-}
-
-.pop-up-some .containerForSome h2 {
-  font-size: 34px;
-  color: #547ebc;
-  font-family: 'latobold', sans-serif;
-  text-align: center;
-  margin: 0 0 30px;
-}
-
-@media (min-width: 100px) and (max-width: 768px) {
-  .pop-up-some .containerForSome h2 {
+  .pop-up-form h3 {
     font-size: 28px;
   }
-}
-@media (min-width: 100px) and (max-width: 568px) {
-  .pop-up-some .containerForSome h2 {
-    font-size: 24px;
+  .pop-up-form .hform_text {
+    font-size: 16px;
+    line-height: 1.3;
   }
-}
-@media (min-width: 100px) and (max-width: 320px) {
-  .pop-up-some .containerForSome h2 {
-    font-size: 22px;
-  }
-}
-.pop-up-some .containerForSome p {
-  color: #000000;
-  font-size: 20px;
-  line-height: 1.3;
-  font-family: 'latolight', sans-serif;
-}
-
-@media (min-width: 100px) and (max-width: 768px) {
-  .pop-up-some .containerForSome p {
+  .pop-up-form input {
     font-size: 16px;
   }
-}
-@media (min-width: 100px) and (max-width: 480px) {
-  .pop-up-some .containerForSome {
-    padding: 60px 20px;
+  .pop-up-form .form-btn {
+    font-size: 18px;
   }
 }
-@media screen and (min-width: 1281px) {
-  .pop-up-some {
-    width: 840px;
-  }
+.fancybox-close-small::after {
+  content: '';
+  color: #031ec5;
+  right: 16px;
+  top: 16px;
+  width: 18px;
+  height: 18px;
+  text-decoration: none;
+  background: url("../img/modal-close.png") no-repeat;
 }
+.fancybox-close-small:hover::after {
+  color: transparent;
+  background: url("../img/modal-close.png") no-repeat;
+}
+
 @media (min-width: 100px) and (max-width: 480px) {
   .pop-up-some {
-    width: 100%;
+    width: 320px;
+    padding: 0 15px;
+  }
+  .pop-up-some h3 {
+    font-size: 28px;
+  }
+  .pop-up-some .hform_text {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .pop-up-some input {
+    font-size: 16px;
+  }
+  .pop-up-some .form-btn {
+    font-size: 18px;
   }
 }
 

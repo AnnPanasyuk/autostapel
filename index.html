@@ -478,7 +478,7 @@
                         </ul>
                     </div>
                     <div class="form-ct">
-                        <form action="" method="POST">
+                        <form action="./ajax-programer.php" method="POST">
                             <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
                             <input type="email" name="email" value="" placeholder="Введите Ваш email" required>
                             <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
@@ -561,7 +561,7 @@
                         нашего оборудования и мы вышлем его<br>
                         в течение 5 минут</p>
                     <div class="form-ct">
-                        <form action="" method="POST">
+                        <form action="./ajax-programer.php" method="POST">
                             <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
                             <input type="email" name="email" value="" placeholder="Введите Ваш email" required>
                             <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
@@ -661,21 +661,69 @@
     </footer>
     <div class="pop-up-some" style="display: none;" id="pop-up-some">
         <div class="containerForSome">
-            <h2>LOREM IPSUM</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur bibendum ornare. Nulla ultrices, metus ullamcorper luctus efficitur, est lorem dictum est, sodales pellentesque tellus odio ut metus. Aliquam erat volutpat. Phasellus dignissim in magna quis imperdiet. Nullam euismod tellus vel risus facilisis, ac laoreet lectus posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer rhoncus odio nisl, eu luctus risus sollicitudin eget. Praesent sem lacus, vestibulum sed dictum eget, semper ac turpis. Pellentesque suscipit viverra fringilla.</p>
+            <div class="form-ct">
+                <h3>ОСТАВЬТЕ ЗАЯВКУ</h3>
+                <p class="hform_text">Заполните форму и наш специалист <br> ответит на все ваши вопросы</p>
+                <form action="./ajax-programer.php" method="POST">
+                    <div class="input input-name">
+                        <div class="img-ct">
+                            <img src="img/input-1-name.png" alt="name">
+                        </div>
+                        <input type="text" name="name" value="" placeholder="Введите Ваш имя" required>
+                    </div>
+                    <div class="input input-email">
+                        <div class="img-ct">
+                            <img src="img/input-1-email.png" alt="name">
+                        </div>
+                        <input type="email" name="email" value="" placeholder="Введите Ваш email" required>
+                    </div>
+                    <div class="input input-phone">
+                        <div class="img-ct">
+                            <img src="img/input-1-phone.png" alt="name">
+                        </div>
+                        <input type="tel" name="phone" value="" placeholder="Введите Ваш телефон" required>
+                    </div>
+                    <button class="form-btn" type="submit">Перезвоните мне</button>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox-callback1" class="checkbox-input" checked="">
+                        <label for="checkbox-callback"> Даю согласие на <a id="politic4" data-fancybox="" data-src="#pop-up-politic" href="javascript:;" target="_blank" class="dashed-link">обработку персональных данных</a></label>
+                    </div>
+                    <p class="privacy">Гарантируем не использовать ваши данные
+                        в рекламных целях</p>
+                </form>
+            </div>
         </div>
     </div>
     <div class="pop-up-form" style="display: none;" id="pop-up-form">
         <div class="containerForForm">
             <div class="form-ct">
-                <form action="" method="POST">
-                    <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
-                    <input type="email" name="email" value="" placeholder="Введите Ваш email" required>
-                    <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
-                    <button type="submit">Заказать консультацию</button>
-                    <p>Нажимая кнопку я даю согласие на<br>
-                        <a id="politic" data-fancybox="" data-src="#pop-up-politic" href="javascript:;">обработку персональных данных </a>
-                    </p>
+                <h3>ОСТАВЬТЕ ЗАЯВКУ</h3>
+                <p class="hform_text">Заполните форму и наш специалист <br> ответит на все ваши вопросы</p>
+                <form action="./ajax-programer.php" method="POST">
+                    <div class="input input-name">
+                        <div class="img-ct">
+                            <img src="img/input-1-name.png" alt="name">
+                        </div>
+                        <input type="text" name="name" value="" placeholder="Введите Ваш имя" required>
+                    </div>
+                    <div class="input input-email">
+                        <div class="img-ct">
+                            <img src="img/input-1-email.png" alt="name">
+                        </div>
+                        <input type="email" name="email" value="" placeholder="Введите Ваш email" required>
+                    </div>
+                    <div class="input input-phone">
+                        <div class="img-ct">
+                            <img src="img/input-1-phone.png" alt="name">
+                        </div>
+                        <input type="tel" name="phone" value="" placeholder="Введите Ваш телефон" required>
+                    </div>
+                    <button class="form-btn" type="submit">Перезвоните мне</button>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox-callback" class="checkbox-input" checked="">
+                        <label for="checkbox-callback"> Даю согласие на <a id="politic" data-fancybox="" data-src="#pop-up-politic" href="javascript:;" target="_blank" class="dashed-link">обработку персональных данных</a></label>
+                    </div>
+                    <p class="privacy"></p>
                 </form>
             </div>
         </div>

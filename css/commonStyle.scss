@@ -237,3 +237,114 @@ a, button {
     }
   }
 }
+%pop-up-form {
+  border: 15px solid #3c5c97;
+  border-radius: 0;
+  width: 453px;
+  padding: 0 40px;
+  h3 {
+    text-align: center;
+    padding-top: 10px;
+    font: bold 55px 'Bebas Neue';
+    letter-spacing: 0.9px;
+    color: #3c5c97;
+  }
+  .hform_text {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 21px;
+    line-height: 24px;
+    font-family: 'MetaPro-Normal', sans-serif;
+    font-weight: 600;
+  }
+  //@extend %form;
+  .input {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0 0;
+  }
+  .img-ct {
+    width: 54px;
+    height: 58px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    img {
+      align-self: center;
+    }
+  }
+  input {
+    border: none;
+    width: calc(100% - 95px);
+    padding: 15px 20px;
+    background-color: #f1f1f1;
+    font: 18px 'MetaPro-Normal';
+  }
+  .form-btn {
+    margin: 12px 0;
+    display: block;
+    width: 100%;
+    height: 66px;
+    font-size: 21px;
+    font-family: 'MetaPro-Normal', sans-serif;
+    font-weight: 600;
+    line-height: 60px;
+    color: #000;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    background: url("../img/button-10.png") no-repeat;
+    &:hover {
+      border: none;
+      background-position: 0 -80px;
+    }
+  }
+  .checkbox {
+    position: relative;
+    margin: 0 auto 1em;
+    padding-left: 1.5rem;
+    width: 280px;
+    input[type="checkbox"] {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      box-sizing: border-box;
+    }
+    label {
+      color: #444;
+      font-family: 'MetaPro-Normal', sans-serif;
+      font-size: 12px;
+      a {
+        color: #444;
+        border-bottom: 1px dashed #444;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &::before {
+        content: '';
+        border-radius: .25rem;
+        background-color: #cecece;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+    .checkbox input {
+      &:checked ~ label::before {
+        background-color: #3c5c97;
+      }
+    }
+  }
+  .privacy {
+    font-size: 14px;
+    color: #727272;
+    text-align: center;
+    font-family: 'MetaPro-Normal', sans-serif;
+    margin: 0 0 15px;
+  }
+}

@@ -184,3 +184,25 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeueBold.eot');
+  src: url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BebasNeueBold.woff2') format('woff2'),
+  url('../fonts/BebasNeueBold.woff') format('woff'),
+  url('../fonts/BebasNeueBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro-Normal';
+  src: url('../fonts/MetaPro-Normal.eot');
+  src: url('../fonts/MetaPro-Normal.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MetaPro-Normal.woff2') format('woff2'),
+  url('../fonts/MetaPro-Normal.woff') format('woff'),
+  url('../fonts/MetaPro-Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
