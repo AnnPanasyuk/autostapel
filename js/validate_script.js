@@ -65,14 +65,10 @@ function validationCall(form){
         data: formSur,
         method:'POST',
         success : function(data){
-            if ( data.trim() == true) {
-                thisForm.trigger("reset");
-                $.fancybox.close();
-                popNext("#call_success");
-            }
-            else {
-               thisForm.trigger('reset');
-            }
+            
+            thisForm.trigger("reset");
+            $.fancybox.close();
+            popNext("#call_success");            
 
         }
     });
