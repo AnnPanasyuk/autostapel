@@ -299,44 +299,18 @@ a, button {
       background-position: 0 -80px;
     }
   }
-  .checkbox {
-    position: relative;
-    margin: 0 auto 1em;
-    padding-left: 1.5rem;
-    width: 280px;
-    input[type="checkbox"] {
-      position: absolute;
-      z-index: -1;
-      opacity: 0;
-      box-sizing: border-box;
-    }
-    label {
+  .text-politic {
+    color: #444;
+    font-family: 'MetaPro-Normal', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 0 10px;
+    a {
       color: #444;
-      font-family: 'MetaPro-Normal', sans-serif;
-      font-size: 12px;
-      a {
-        color: #444;
-        border-bottom: 1px dashed #444;
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-      &::before {
-        content: '';
-        border-radius: .25rem;
-        background-color: #cecece;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 1rem;
-        height: 1rem;
-      }
-    }
-    .checkbox input {
-      &:checked ~ label::before {
-        background-color: #3c5c97;
+      border-bottom: 1px dashed #444;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
