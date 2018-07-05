@@ -9,19 +9,35 @@
   }
   .text-block {
     margin: 0 0 20px 10px;
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin: 0 0 10px 5px;
+    }
   }
   .htext {
     margin: 0 0 30px;
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin: 0 0 15px;
+    }
   }
   .ol-2 {
     margin: 0 0 0 25px;
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin: 0 0 0 15px;
+    }
     li {
       margin: 0 0 10px;
+      @media (min-width: 320px) and (max-width: 480px) {
+        margin: 0 0 5px;
+      }
     }
   }
 }
 .pop-up-politic .containerForPolitic {
-  padding: 30px 40px; }
+  padding: 30px 40px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding: 15px 25px;
+  }  
+}
 .pop-up-politic .containerForPolitic h2 {
   font-size: 20px;
   color: #444;
