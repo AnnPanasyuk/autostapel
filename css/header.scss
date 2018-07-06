@@ -1,18 +1,18 @@
 header {
   @extend %header_footer;
   .text-ct {
-    @media (min-width: 320px) and (max-width: 425px) {
+    @media (min-width: 320px) and (max-width: 767px) {
       display: block;
       margin: 0 auto;
     }
   }
   .work {
-    @media (min-width: 320px) and (max-width: 425px) {
+    @media (min-width: 320px) and (max-width: 767px) {
       display: none!important;
     }
   }
-  .main-phone-ct {
-    @media (min-width: 320px) and (max-width: 425px) {
+  .link-ct {
+    @media (min-width: 320px) and (max-width: 767px) {
       display: none!important;
     }
   }

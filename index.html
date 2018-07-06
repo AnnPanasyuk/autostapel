@@ -5,9 +5,9 @@
     <title>Autostapel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
     <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,700,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
     <header>
@@ -60,7 +60,32 @@
             </div>
         </div>
     </header>
-    <div class="top-content">
+    <div class="top-menu">
+        <div class="container">
+            <div class="toggle">
+                <div id="nav-icon3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="menu-ct">
+                <div class="nav" id="nav">
+                    <a href="#top" class="nav-item">Главная</a>
+                    <a href="#advantages" class="nav-item">Преимущества</a>
+                    <a href="#equipment" class="nav-item">Доп .оборудование</a>
+                    <a href="#reviews" class="nav-item">Отзывы</a>
+                    <a href="#credit" class="nav-item">Кредит</a>
+                    <a href="#contacts" class="nav-item">Контакты</a>
+                    <div class="link-phone-ct">
+                        <a href="#" class="nav-item link-phone">Перезвоните мне</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-content" id="top">
         <div class="container">
             <h2>Профессиональные автостапели от <br>
                 производителя с <span>гарантией 3 года</span></h2>
@@ -219,9 +244,9 @@
                     </div>
                     <div class="form-ct">
                         <form action="./ajax-programer.php" method="POST">
-                            <input type="text" name="text" value="" placeholder="Введите Ваш телефон" required>
+                            <input type="text" name="text" value="" placeholder="Введите Ваше имя" required>
                             <input type="email" name="email" value="" placeholder="Введите Ваш email" required>
-                            <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
+                            <input type="tel" name="phone" value="" placeholder="Введите Ваш телефон" required>
                             <button type="submit">Заказать консультацию</button>
                             <p>Нажимая кнопку я даю согласие на<br>
                                 <a id="politic3" data-fancybox="" data-src="#pop-up-politic" href="javascript:;">обработку персональных данных </a>
@@ -232,7 +257,7 @@
             </div>
         </div>
     </div>
-    <div class="advantages">
+    <div class="advantages" id="advantages">
         <div class="container">
             <h2>Преимущества стенда AUTOSTAPEL</h2>
             <div class="scheme-ct">
@@ -382,16 +407,37 @@
         <div class="container">
             <h2>Заказывайте оборудование у профессионалов</h2>
             <p class="video_desc">Видео о работе с нашими стапелями</p>
-            <div class="video-ct">
-                <iframe src="https://www.youtube.com/embed/qNLTbujHwFc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="video-block">
+                <div class="video-ct">
+                    <video class="media-video" id="media-video" poster="img/poster-video.png" controls="">
+                        <source src="video/video-1.mp4" type="video/mp4">
+                    </video>
+                    <div id="controls" class="controls active">
+                        <div class="play-button"></div>
+                    </div>
+                </div>
                 <p>Рамный стапель серия Profi</p>
             </div>
-            <div class="video-ct">
-                <iframe src="https://www.youtube.com/embed/SjeOYOuRsmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="video-block">
+                <div class="video-ct">
+                    <video class="media-video" id="media-video2" poster="img/poster-video.png" controls="">
+                        <source src="video/video-2.mp4" type="video/mp4">
+                    </video>
+                    <div id="controls2" class="controls active">
+                        <div class="play-button"></div>
+                    </div>
+                </div>
                 <p>Рамный стапель серия Exspress</p>
             </div>
-            <div class="video-ct">
-                <iframe src="https://www.youtube.com/embed/HG3TB5w_hHU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="video-block">
+                <div class="video-ct">
+                    <video class="media-video" id="media-video3" poster="img/poster-video.png" controls="">
+                        <source src="video/video-3.mp4" type="video/mp4">
+                    </video>
+                    <div id="controls3" class="controls active">
+                        <div class="play-button"></div>
+                    </div>
+                </div>
                 <p>Рамный стапель серия Exspress</p>
             </div>
         </div>
@@ -404,7 +450,7 @@
             </div>
         </div>
     </div>
-    <div class="reviews">
+    <div class="reviews" id="reviews">
         <div class="container">
             <h2>Отзывы наших клиентов</h2>
             <div class="card">
@@ -412,13 +458,11 @@
                     <img src="img/rev-img-1.png" alt="img">
                 </div>
                 <div class="text-ct">
-                    <p class="caption">Василий, г. Воронеж</p>
-                    <p class="desc">Столкнулся с проблемой выбора стапеля, не хотелось выделять отдельный бокс для кузовного ремонта, в тоже время нужен был надёжный, функциональный и конечно не дорогой, как всегда.
-                        <br>
-                        Пересмотрел кучу вариантов и остановился на Российском производителе стапелей AUTOSTAPEL, у них профессиональное оборудование и гарантия 3 года. Получил подробную консультацию,
-                        спасибо Дмитрию, и выбрал стапель серии профи AS45L2. Установили мы стапель в приямок, это лучшее решение по стапелям на мой взгляд.
-                        <br>
-                        Места не занимает совсем, если не тянешь машину,
+                    <h3>Василий, г. Воронеж</h3>
+                    <p class="desc">Столкнулся с проблемой выбора стапеля, не хотелось выделять отдельный бокс для кузовного ремонта, в тоже время нужен был надёжный, функциональный и конечно не дорогой, как всегда.</p>
+                    <p class="desc">Пересмотрел кучу вариантов и остановился на Российском производителе стапелей AUTOSTAPEL, у них профессиональное оборудование и гарантия 3 года. Получил подробную консультацию,
+                        спасибо Дмитрию, и выбрал стапель серии профи AS45L2. Установили мы стапель в приямок, это лучшее решение по стапелям на мой взгляд.</p>
+                    <p class="desc"> Места не занимает совсем, если не тянешь машину,
                         то на этом месте можно делать че угодно, ничего не мешает. Кроме того, он развивает не только тянущее усилие, но и ТОЛКАЮЩЕЕ!!! Очень удобно.</p>
                 </div>
             </div>
@@ -427,16 +471,42 @@
                     <img src="img/rev-img-2.png" alt="img">
                 </div>
                 <div class="text-ct">
-                    <p class="caption">Михаил, г. Москва</p>
-                    <p class="desc">В кузовне работаю давно, поэтому свое мнение считаю вполне компетентным. На практике, скажу откровенно, лучше чем Автостапель, пока ничего не встречал, да и встречать не хочу. Знакомство со стапелями, как у многих, началось с китайщины и гаражного ширпотреба.
-                        <br>
-                        После нескольких лет работы, с постоянно “сопливыми” башнями, проблемной гидравликой, сломанными зажимами и т.д., да и усилие на стреле мягко говоря не соответствовало заявленной, встал вопрос о смене брэнда, так как сил на поиски рем комплектов и запчастей просто не осталось.
-                        <br>
-                        Частые простои из- за таких нюансов, а это соответственно бабло мимо моего кармана. Надо сказать, это был рамный стапель, брэнд не буду называть из соображений корректности.
-                        <br>
-                        Не буду долго описывать процесс принятия решения о покупке Автостапеля, но надо сказать, это было взвешенное решение, проведен серьезный анализ, живое общение с кузовщиками.
-                        <br>
-                        В конце концов, я купил платформенный стапель для восстановления геометрии кузова и рам Autostapel Black Shark, отбился он в первые четыре месяца. Плюс ко всему, что немаловажно гарантия 3 года и тех. поддержка, возникают вопросы, я на них всегда получаю ответы от тех. службы Автостапель. Ну, как-то вот так, кратенько.</p>
+                    <div class="overlay-block"></div>
+                    <h3>Михаил, г. Москва</h3>
+                    <p class="desc">В кузовне работаю давно, поэтому свое мнение считаю вполне компетентным. На практике, скажу откровенно, лучше чем Автостапель, пока ничего не встречал, да и встречать не хочу. Знакомство со стапелями, как у многих, началось с китайщины и гаражного ширпотреба.</p>
+                    <p class="desc">После нескольких лет работы, с постоянно “сопливыми” башнями, проблемной гидравликой, сломанными зажимами и т.д., да и усилие на стреле мягко говоря не соответствовало заявленной, встал вопрос о смене брэнда, так как сил на поиски рем комплектов и запчастей просто не осталось.</p>
+                    <p class="desc">Частые простои из- за таких нюансов, а это соответственно бабло мимо моего кармана. Надо сказать, это был рамный стапель, брэнд не буду называть из соображений корректности.</p>
+                    <p class="desc">Не буду долго описывать процесс принятия решения о покупке Автостапеля, но надо сказать, это было взвешенное решение, проведен серьезный анализ, живое общение с кузовщиками.</p>
+                    <p class="desc">В конце концов, я купил платформенный стапель для восстановления геометрии кузова и рам Autostapel Black Shark, отбился он в первые четыре месяца. Плюс ко всему, что немаловажно гарантия 3 года и тех. поддержка, возникают вопросы, я на них всегда получаю ответы от тех. службы Автостапель. Ну, как-то вот так, кратенько.</p>
+                    <p>Читать далее</p>
+                </div>
+            </div>
+            <div class="card hidden-card">
+                <div class="img-ct">
+                    <img src="img/rev-img-1.png" alt="img">
+                </div>
+                <div class="text-ct">
+                    <h3>Василий, г. Воронеж</h3>
+                    <p class="desc">Столкнулся с проблемой выбора стапеля, не хотелось выделять отдельный бокс для кузовного ремонта, в тоже время нужен был надёжный, функциональный и конечно не дорогой, как всегда.</p>
+                    <p class="desc">Пересмотрел кучу вариантов и остановился на Российском производителе стапелей AUTOSTAPEL, у них профессиональное оборудование и гарантия 3 года. Получил подробную консультацию,
+                        спасибо Дмитрию, и выбрал стапель серии профи AS45L2. Установили мы стапель в приямок, это лучшее решение по стапелям на мой взгляд.</p>
+                    <p class="desc"> Места не занимает совсем, если не тянешь машину,
+                        то на этом месте можно делать че угодно, ничего не мешает. Кроме того, он развивает не только тянущее усилие, но и ТОЛКАЮЩЕЕ!!! Очень удобно.</p>
+                </div>
+            </div>
+            <div class="card hidden-card">
+                <div class="img-ct">
+                    <img src="img/rev-img-2.png" alt="img">
+                </div>
+                <div class="text-ct">
+                    <div class="overlay-block"></div>
+                    <h3>Михаил, г. Москва</h3>
+                    <p class="desc">В кузовне работаю давно, поэтому свое мнение считаю вполне компетентным. На практике, скажу откровенно, лучше чем Автостапель, пока ничего не встречал, да и встречать не хочу. Знакомство со стапелями, как у многих, началось с китайщины и гаражного ширпотреба.</p>
+                    <p class="desc">После нескольких лет работы, с постоянно “сопливыми” башнями, проблемной гидравликой, сломанными зажимами и т.д., да и усилие на стреле мягко говоря не соответствовало заявленной, встал вопрос о смене брэнда, так как сил на поиски рем комплектов и запчастей просто не осталось.</p>
+                    <p class="desc">Частые простои из- за таких нюансов, а это соответственно бабло мимо моего кармана. Надо сказать, это был рамный стапель, брэнд не буду называть из соображений корректности.</p>
+                    <p class="desc">Не буду долго описывать процесс принятия решения о покупке Автостапеля, но надо сказать, это было взвешенное решение, проведен серьезный анализ, живое общение с кузовщиками.</p>
+                    <p class="desc">В конце концов, я купил платформенный стапель для восстановления геометрии кузова и рам Autostapel Black Shark, отбился он в первые четыре месяца. Плюс ко всему, что немаловажно гарантия 3 года и тех. поддержка, возникают вопросы, я на них всегда получаю ответы от тех. службы Автостапель. Ну, как-то вот так, кратенько.</p>
+                    <p>Читать далее</p>
                 </div>
             </div>
             <div class="btn-ct">
@@ -478,9 +548,9 @@
                     </div>
                     <div class="form-ct">
                         <form action="./ajax-programer.php" method="POST">
-                            <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
+                            <input type="text" name="phone" value="" placeholder="Введите Ваше имя" required>
                             <input type="email" name="email" value="" placeholder="Введите Ваш email" required>
-                            <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
+                            <input type="tel" name="phone" value="" placeholder="Введите Ваш телефон" required>
                             <button type="submit">Заказать консультацию</button>
                             <p>Нажимая кнопку я даю согласие на<br>
                                 <a id="politic2" data-fancybox="" data-src="#pop-up-politic" href="javascript:;">обработку персональных данных </a>
@@ -561,9 +631,9 @@
                         в течение 5 минут</p>
                     <div class="form-ct">
                         <form action="./ajax-programer.php" method="POST">
-                            <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
+                            <input type="text" name="phone" value="" placeholder="Введите Ваше имя" required>
                             <input type="email" name="email" value="" placeholder="Введите Ваш email" required>
-                            <input type="text" name="phone" value="" placeholder="Введите Ваш телефон" required>
+                            <input type="tel" name="phone" value="" placeholder="Введите Ваш телефон" required>
                             <button type="submit">Заказать консультацию</button>
                             <p>Нажимая кнопку я даю согласие на<br>
                                 <a id="politic1" data-fancybox="" data-src="#pop-up-politic" href="javascript:;">обработку персональных данных </a>
@@ -601,7 +671,7 @@
             </div>
         </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contacts">
         <div class="container">
             <h2>Наши контакты</h2>
             <p>ООО НПО «Звезда» Демонстрационный зал: г. Пушкино ул. Заводская д.19</p>
@@ -669,7 +739,7 @@
                         <div class="img-ct">
                             <img src="img/input-1-name.png" alt="name">
                         </div>
-                        <input type="text" name="name" value="" placeholder="Введите Ваш имя" required>
+                        <input type="text" name="name" value="" placeholder="Введите Ваше имя" required>
                     </div>
                     <div class="input input-email">
                         <div class="img-ct">
@@ -982,6 +1052,7 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/jquery.fancybox.js"></script>
     <script src="js/maskInput.js"></script>
     <script src="js/jquery.validate.min.js"></script>

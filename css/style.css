@@ -27,12 +27,15 @@ img {
   text-align: center;
   margin: 0 0 50px;
   color: #1d1d1d;
-  font-family: 'latobold', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 36px;
   font-weight: 700; }
   @media (min-width: 320px) and (max-width: 667px) {
     .advantages h2, .catalog h2, .video h2, .demonstration h2, .reviews h2, .partner h2, .certificate h2, .delivery h2, .contact h2 {
       font-size: 30px; } }
+  @media (min-width: 320px) and (max-width: 667px) {
+    .advantages h2, .catalog h2, .video h2, .demonstration h2, .reviews h2, .partner h2, .certificate h2, .delivery h2, .contact h2 {
+      font-size: 26px; } }
 
 .consultation .right-ct .form-ct, .order .text-ct .form-ct {
   width: 325px;
@@ -67,7 +70,7 @@ img {
     border-radius: 5px;
     border: none;
     color: #1d1d1d;
-    font-family: 'latobold', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: 700; }
   .consultation .right-ct .form-ct form p, .order .text-ct .form-ct form p {
@@ -129,11 +132,12 @@ header, footer {
     header .text-ct h2, footer .text-ct h2 {
       align-self: center;
       color: #ffde00;
-      font-family: 'latoblack_italic', sans-serif;
+      font-family: 'Lato', sans-serif;
       font-size: 30px;
-      font-weight: 400;
+      font-weight: 900;
+      font-style: italic;
       margin: 0 12px 0 0; }
-      @media (min-width: 320px) and (max-width: 375px) {
+      @media (min-width: 320px) and (max-width: 767px) {
         header .text-ct h2, footer .text-ct h2 {
           margin: 0;
           text-align: center; } }
@@ -141,11 +145,11 @@ header, footer {
       margin: 0 11px 0 0; }
     header .text-ct p, footer .text-ct p {
       color: #ffffff;
-      font-family: 'latolight', sans-serif;
+      font-family: 'Lato', sans-serif;
       font-size: 14px;
       font-weight: 300;
       line-height: 16px; }
-    @media (min-width: 320px) and (max-width: 568px) {
+    @media (min-width: 320px) and (max-width: 767px) {
       header .text-ct .desc-ct p, footer .text-ct .desc-ct p {
         display: none; } }
   @media (min-width: 320px) and (max-width: 1024px) {
@@ -163,15 +167,18 @@ header, footer {
       header .phone-ct .phone-number, footer .phone-ct .phone-number {
         margin: 0 15px 0 0;
         order: 1; } }
+    @media (min-width: 320px) and (max-width: 767px) {
+      header .phone-ct .phone-number p, footer .phone-ct .phone-number p {
+        line-height: 1.4; } }
   header .phone-ct svg, footer .phone-ct svg {
     margin: 0 6px 0 0; }
   header .phone-ct a, footer .phone-ct a {
     text-decoration: none;
     align-self: center;
     color: #ffffff;
-    font-family: 'latoblack', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 16px;
     transition: .3s; }
     header .phone-ct a:hover, footer .phone-ct a:hover {
@@ -181,7 +188,7 @@ header, footer {
       order: 2; } }
   header .phone-ct .link-ct a, footer .phone-ct .link-ct a {
     color: #ffde00;
-    font-family: 'latolight', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 16px;
@@ -316,111 +323,15 @@ header, footer {
     #call_success h3 {
       font-size: 28px; } }
 @font-face {
-  font-family: 'latothin';
-  src: url("../fonts/lato-thin.eot");
-  src: url("../fonts/lato-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-thin.woff") format("woff"), url("../fonts/lato-thin.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latolight';
-  src: url("../fonts/lato-light.eot");
-  src: url("../fonts/lato-light.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-light.woff") format("woff"), url("../fonts/lato-light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latoregular';
-  src: url("../fonts/lato-regular.eot");
-  src: url("../fonts/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-regular.woff") format("woff"), url("../fonts/lato-regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latomedium';
-  src: url("../fonts/lato-medium.eot");
-  src: url("../fonts/lato-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-medium.woff") format("woff"), url("../fonts/lato-medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: 'latosemibold';
   src: url("../fonts/lato-semibold.eot");
   src: url("../fonts/lato-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-semibold.woff") format("woff"), url("../fonts/lato-semibold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'latobold';
-  src: url("../fonts/lato-bold.eot");
-  src: url("../fonts/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bold.woff") format("woff"), url("../fonts/lato-bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: 'latoheavy';
   src: url("../fonts/lato-heavy.eot");
   src: url("../fonts/lato-heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-heavy.woff") format("woff"), url("../fonts/lato-heavy.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latoblack';
-  src: url("../fonts/lato-black.eot");
-  src: url("../fonts/lato-black.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-black.woff") format("woff"), url("../fonts/lato-black.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latothin_italic';
-  src: url("../fonts/lato-thinitalic.eot");
-  src: url("../fonts/lato-thinitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-thinitalic.woff") format("woff"), url("../fonts/lato-thinitalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latolight_italic';
-  src: url("../fonts/lato-lightitalic.eot");
-  src: url("../fonts/lato-lightitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-lightitalic.woff") format("woff"), url("../fonts/lato-lightitalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latoitalic';
-  src: url("../fonts/lato-italic.eot");
-  src: url("../fonts/lato-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-italic.woff") format("woff"), url("../fonts/lato-italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latomedium_italic';
-  src: url("../fonts/lato-mediumitalic.eot");
-  src: url("../fonts/lato-mediumitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-mediumitalic.woff") format("woff"), url("../fonts/lato-mediumitalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latosemibold_italic';
-  src: url("../fonts/lato-semibolditalic.eot");
-  src: url("../fonts/lato-semibolditalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-semibolditalic.woff") format("woff"), url("../fonts/lato-semibolditalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latobold_italic';
-  src: url("../fonts/lato-bolditalic.eot");
-  src: url("../fonts/lato-bolditalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bolditalic.woff") format("woff"), url("../fonts/lato-bolditalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latoheavy_italic';
-  src: url("../fonts/lato-heavyitalic.eot");
-  src: url("../fonts/lato-heavyitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-heavyitalic.woff") format("woff"), url("../fonts/lato-heavyitalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latoblack_italic';
-  src: url("../fonts/lato-blackitalic.eot");
-  src: url("../fonts/lato-blackitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-blackitalic.woff") format("woff"), url("../fonts/lato-blackitalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latohairline';
-  src: url("../fonts/lato-hairline.eot");
-  src: url("../fonts/lato-hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-hairline.woff") format("woff"), url("../fonts/lato-hairline.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latohairline_italic';
-  src: url("../fonts/lato-hairlineitalic.eot");
-  src: url("../fonts/lato-hairlineitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-hairlineitalic.woff") format("woff"), url("../fonts/lato-hairlineitalic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
@@ -440,16 +351,151 @@ header, footer {
   src: url("../fonts/MetaPro-Normal.eot?#iefix") format("embedded-opentype"), url("../fonts/MetaPro-Normal.woff2") format("woff2"), url("../fonts/MetaPro-Normal.woff") format("woff"), url("../fonts/MetaPro-Normal.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 767px) {
   header .text-ct {
     display: block;
     margin: 0 auto; } }
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 767px) {
   header .work {
     display: none !important; } }
-@media (min-width: 320px) and (max-width: 425px) {
-  header .main-phone-ct {
+@media (min-width: 320px) and (max-width: 767px) {
+  header .link-ct {
     display: none !important; } }
+
+.top-menu {
+  background-color: #2373B0;
+  background-image: linear-gradient(to bottom, #2373B0 0%, #3C5C97 100%);
+  width: 100%; }
+  .top-menu .toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1; }
+    @media screen and (min-width: 767px) {
+      .top-menu .toggle {
+        display: none; } }
+    .top-menu .toggle #nav-icon3 {
+      width: 40px;
+      height: 29px;
+      position: relative;
+      margin: 35px 40px;
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      cursor: pointer; }
+      @media (min-width: 320px) and (max-width: 320px) {
+        .top-menu .toggle #nav-icon3 {
+          margin: 40px 20px 0 0; } }
+      .top-menu .toggle #nav-icon3 span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #2373B0;
+        -webkit-border-radius: 9px;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out; }
+        .top-menu .toggle #nav-icon3 span:nth-child(1) {
+          top: 0px; }
+        .top-menu .toggle #nav-icon3 span:nth-child(2), .top-menu .toggle #nav-icon3 span:nth-child(3) {
+          top: 12px; }
+        .top-menu .toggle #nav-icon3 span:nth-child(4) {
+          top: 24px; }
+    .top-menu .toggle #nav-icon3.open span:nth-child(1) {
+      top: 18px;
+      width: 0%;
+      left: 50%; }
+    .top-menu .toggle #nav-icon3.open span:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .top-menu .toggle #nav-icon3.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    .top-menu .toggle #nav-icon3.open span:nth-child(4) {
+      top: 18px;
+      width: 0%;
+      left: 50%; }
+  .top-menu .menu-ct {
+    display: block; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .top-menu .menu-ct {
+        display: none; } }
+  .top-menu .hidden {
+    display: none !important; }
+  .top-menu .visible {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important; }
+  .top-menu .nav {
+    display: flex;
+    justify-content: center; }
+    .top-menu .nav .nav-item {
+      font-family: 'MetaPro-Normal', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 1;
+      text-align: center;
+      border-left: 1px solid #3d74ab;
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      padding: 20px 19px 11px;
+      position: relative; }
+      .top-menu .nav .nav-item:hover {
+        color: #000;
+        background: #F1CA07;
+        background-image: linear-gradient(to bottom, #F1CA07 0%, #E39A24 100%); }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .top-menu .nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px 0;
+        width: 100%;
+        background-color: #ffffff;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .top-menu .nav .nav-item {
+          color: #2373B0;
+          border: none; } }
+  .top-menu .link-phone-ct {
+    height: 100%;
+    margin: 0 0 0 15px;
+    display: flex;
+    justify-content: center; }
+    .top-menu .link-phone-ct:hover {
+      color: #000;
+      background: #F1CA07;
+      background-image: linear-gradient(to bottom, #F1CA07 0%, #E39A24 100%); }
+  .top-menu .link-phone {
+    align-self: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px dotted #fff;
+    padding: 0 !important; }
 
 .top-content {
   background: url("../img/top-content-bg.png") no-repeat 50% 100%;
@@ -464,39 +510,26 @@ header, footer {
   .top-content h2 {
     text-align: center;
     color: #212121;
-    font-family: 'latoblack', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 48px;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 51px; }
-    @media (min-width: 320px) and (max-width: 667px) {
+    @media (min-width: 320px) and (max-width: 768px) {
       .top-content h2 {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 1.2; } }
     .top-content h2 span {
       color: #547ebc; }
   .top-content .flex-ct {
-    display: flex;
-    justify-content: space-between;
     position: relative; }
-    @media (min-width: 320px) and (max-width: 1024px) {
-      .top-content .flex-ct {
-        padding: 200px 0 0; } }
-    @media (min-width: 320px) and (max-width: 667px) {
-      .top-content .flex-ct {
-        flex-wrap: wrap; } }
-    @media (min-width: 320px) and (max-width: 375px) {
-      .top-content .flex-ct {
-        padding: 250px 0 0; } }
   .top-content .text-ct {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; }
+    position: relative;
+    z-index: 2; }
     .top-content .text-ct .deliver-text {
       margin: 15px 0 60px;
       text-align: center;
       color: #212121;
-      font-family: 'latolight', sans-serif;
+      font-family: 'Lato', sans-serif;
       font-size: 30px;
       font-weight: 300;
       line-height: 16px; }
@@ -504,31 +537,41 @@ header, footer {
         .top-content .text-ct .deliver-text {
           margin: 15px 0 40px;
           line-height: 1.2; } }
-    .top-content .text-ct .advantages-items ul {
-      display: flex; }
-      @media (min-width: 320px) and (max-width: 1024px) {
-        .top-content .text-ct .advantages-items ul {
-          flex-wrap: wrap;
-          justify-content: center; } }
-      .top-content .text-ct .advantages-items ul li {
-        display: flex;
-        margin: 0 15px 0 0; }
+    .top-content .text-ct .advantages-items {
+      margin: 0 0 150px; }
+      @media (min-width: 320px) and (max-width: 768px) {
+        .top-content .text-ct .advantages-items {
+          margin: 0 0 100px; } }
+      @media (min-width: 320px) and (max-width: 667px) {
+        .top-content .text-ct .advantages-items {
+          margin: 0 0 20px; } }
+      .top-content .text-ct .advantages-items ul {
+        display: flex; }
         @media (min-width: 320px) and (max-width: 1024px) {
-          .top-content .text-ct .advantages-items ul li {
-            width: 45%;
-            margin: 0 10px 20px; } }
-        @media (min-width: 320px) and (max-width: 480px) {
-          .top-content .text-ct .advantages-items ul li {
-            width: 100%; } }
-        .top-content .text-ct .advantages-items ul li svg {
-          fill: #547ebc;
-          margin: 0 2px 0 0; }
-        .top-content .text-ct .advantages-items ul li p {
-          color: #212121;
-          font-family: 'latosemibold', sans-serif;
-          font-size: 18px;
-          font-weight: 400; }
+          .top-content .text-ct .advantages-items ul {
+            flex-wrap: wrap;
+            justify-content: center; } }
+        .top-content .text-ct .advantages-items ul li {
+          display: flex;
+          margin: 0 15px 0 0; }
+          @media (min-width: 320px) and (max-width: 1024px) {
+            .top-content .text-ct .advantages-items ul li {
+              width: 45%;
+              margin: 0 10px 20px; } }
+          @media (min-width: 320px) and (max-width: 480px) {
+            .top-content .text-ct .advantages-items ul li {
+              width: 100%; } }
+          .top-content .text-ct .advantages-items ul li svg {
+            fill: #547ebc;
+            margin: 0 2px 0 0; }
+          .top-content .text-ct .advantages-items ul li p {
+            color: #212121;
+            font-family: 'latosemibold', sans-serif;
+            font-size: 18px;
+            font-weight: 400; }
   .top-content .stock-ct {
+    position: relative;
+    z-index: 3;
     align-self: flex-end;
     display: flex;
     justify-content: flex-start; }
@@ -547,6 +590,9 @@ header, footer {
       @media (min-width: 320px) and (max-width: 960px) {
         .top-content .stock-ct .card {
           width: 340px; } }
+      @media (min-width: 320px) and (max-width: 667px) {
+        .top-content .stock-ct .card {
+          margin: 0 auto; } }
       @media (min-width: 320px) and (max-width: 375px) {
         .top-content .stock-ct .card {
           width: auto; } }
@@ -557,15 +603,15 @@ header, footer {
           padding: 25px 0;
           text-align: center;
           color: #ffffff;
-          font-family: 'latoblack', sans-serif;
+          font-family: 'Lato', sans-serif;
           font-size: 20px;
-          font-weight: 400; }
+          font-weight: 900; }
       .top-content .stock-ct .card .term {
         text-align: center;
         color: #547ebc;
-        font-family: 'latoblack', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-size: 42px;
-        font-weight: 400;
+        font-weight: 900;
         margin: 33px 0 25px; }
         @media (min-width: 320px) and (max-width: 667px) {
           .top-content .stock-ct .card .term {
@@ -583,7 +629,7 @@ header, footer {
         background-color: #ffde00;
         border: none;
         color: #1d1d1d;
-        font-family: 'latobold', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-size: 18px;
         font-weight: 700;
         transition: .3s; }
@@ -593,19 +639,20 @@ header, footer {
           .top-content .stock-ct .card button {
             width: 90%; } }
   .top-content .img-ct {
-    width: 60%; }
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1; }
     @media (min-width: 320px) and (max-width: 1024px) {
       .top-content .img-ct {
-        width: 56%; } }
-    @media (min-width: 320px) and (max-width: 960px) {
+        width: 100%; } }
+    @media (min-width: 320px) and (max-width: 768px) {
       .top-content .img-ct {
-        width: 50%;
-        align-self: center; } }
+        bottom: 50px; } }
     @media (min-width: 320px) and (max-width: 667px) {
       .top-content .img-ct {
-        width: 300px;
-        order: 1;
-        margin: 0 auto 30px; } }
+        display: none; } }
     .top-content .img-ct img {
       width: 100%; }
 
@@ -678,13 +725,13 @@ header, footer {
           padding: 20px 15px; } }
       .consultation .left-ct .desc-ct p {
         color: #202020;
-        font-family: 'latoregular', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-size: 16px;
         font-weight: 400;
         line-height: 20px; }
         .consultation .left-ct .desc-ct p:first-child {
           color: #202020;
-          font-family: 'latobold', sans-serif;
+          font-family: 'Lato', sans-serif;
           font-size: 20px;
           font-weight: 700;
           line-height: 20px; }
@@ -715,16 +762,16 @@ header, footer {
     .consultation .right-ct .text-ct h2 {
       color: #ffffff;
       line-height: 35px;
-      font-family: 'latoblack', sans-serif;
+      font-family: 'Lato', sans-serif;
       font-size: 40px;
-      font-weight: 400;
+      font-weight: 900;
       margin: 0 0 30px; }
       @media (min-width: 320px) and (max-width: 667px) {
         .consultation .right-ct .text-ct h2 {
           font-size: 36px;
           text-align: center; } }
       .consultation .right-ct .text-ct h2 span {
-        font-family: 'latolight', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-size: 30px;
         font-weight: 300; }
         @media (min-width: 320px) and (max-width: 667px) {
@@ -750,7 +797,7 @@ header, footer {
       .consultation .right-ct .text-ct ul li .desc {
         color: #1d1d1d;
         align-self: center;
-        font-family: 'latoregular', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-size: 16px;
         font-weight: 400;
         line-height: 18px;
@@ -780,7 +827,7 @@ header, footer {
     .consultation .card-percent p {
       width: 60%;
       color: #1d1d1d;
-      font-family: 'latoregular', sans-serif;
+      font-family: 'Lato', sans-serif;
       font-size: 30px;
       font-weight: 400;
       line-height: 35px; }
@@ -794,7 +841,7 @@ header, footer {
           width: 100%; } }
       .consultation .card-percent p span {
         color: #547ebc;
-        font-family: 'latoblack', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-weight: 900; }
     .consultation .card-percent .img-ct {
       position: absolute;
@@ -829,9 +876,9 @@ header, footer {
           transform: translate(-50%, -50%);
           text-align: center;
           color: #547ebc;
-          font-family: 'latoblack', sans-serif;
+          font-family: 'Lato', sans-serif;
           font-size: 110px;
-          font-weight: 400; }
+          font-weight: 900; }
           @media (min-width: 320px) and (max-width: 960px) {
             .consultation .card-percent .img-ct .percent-text p {
               font-size: 70px; } }
@@ -905,13 +952,13 @@ header, footer {
         width: 100%; }
     .advantages .adv-ct .caption {
       color: #1d1d1d;
-      font-family: 'latobold', sans-serif;
+      font-family: 'Lato', sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 18px; }
     .advantages .adv-ct .desc {
       color: #1d1d1d;
-      font-family: 'latoregular', sans-serif;
+      font-family: 'Lato', sans-serif;
       font-size: 14px;
       font-weight: 400;
       line-height: 17px; }
@@ -946,10 +993,10 @@ header, footer {
     left: 8px; }
   .advantages .line-3 {
     top: 49%;
-    right: -36px; }
+    right: -46px; }
   .advantages .line-4 {
     top: 49%;
-    left: -36px; }
+    left: -46px; }
   .advantages .line-5 {
     top: 0;
     right: 8px;
@@ -1034,7 +1081,7 @@ header, footer {
       .catalog .card .desc-ct a {
         align-self: center;
         color: #ffffff;
-        font-family: 'latobold', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-size: 20px;
         font-weight: 700;
         text-align: center;
@@ -1054,7 +1101,7 @@ header, footer {
       background-color: #ffde00;
       padding: 22px 70px;
       color: #1d1d1d;
-      font-family: 'latobold', sans-serif;
+      font-family: 'Lato', sans-serif;
       font-size: 18px;
       font-weight: 700;
       border-radius: 5px;
@@ -1084,36 +1131,105 @@ header, footer {
     font-weight: 700;
     text-align: center;
     margin: 15px 0 55px; }
-  .video .video-ct iframe {
-    display: block;
-    width: 948px;
-    height: 518px;
-    margin: 0 auto;
-    background-color: #181818; }
-    @media (min-width: 320px) and (max-width: 1100px) {
-      .video .video-ct iframe {
-        width: 100%; } }
-    @media (min-width: 320px) and (max-width: 1024px) {
-      .video .video-ct iframe {
-        width: 90%;
-        margin: 0 auto;
-        height: 425px; } }
-    @media (min-width: 320px) and (max-width: 768px) {
-      .video .video-ct iframe {
-        height: 350px; } }
-    @media (min-width: 320px) and (max-width: 568px) {
-      .video .video-ct iframe {
-        height: 270px; } }
-    @media (min-width: 320px) and (max-width: 375px) {
-      .video .video-ct iframe {
-        height: 200px; } }
-  .video .video-ct p {
+  .video .video-ct {
+    position: relative; }
+    .video .video-ct video {
+      display: block;
+      width: 925px;
+      height: 510px;
+      margin: 0 auto;
+      background-color: #181818; }
+      @media (min-width: 320px) and (max-width: 1100px) {
+        .video .video-ct video {
+          width: 100%; } }
+      @media (min-width: 320px) and (max-width: 1024px) {
+        .video .video-ct video {
+          width: 87%;
+          margin: 0 auto;
+          height: 425px; } }
+      @media (min-width: 320px) and (max-width: 768px) {
+        .video .video-ct video {
+          height: 350px; } }
+      @media (min-width: 320px) and (max-width: 568px) {
+        .video .video-ct video {
+          height: 270px; } }
+      @media (min-width: 320px) and (max-width: 375px) {
+        .video .video-ct video {
+          height: 200px; } }
+  .video p {
     color: #1d1d1d;
-    font-family: 'latobold', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 700;
     margin: 20px 0 55px;
     text-align: center; }
+  .video .controls {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+    .video .controls .play-button {
+      display: block;
+      width: 94px;
+      height: 94px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background-color: #ffffff;
+      position: relative;
+      overflow: hidden; }
+      .video .controls .play-button::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 56%;
+        transform: translate(-50%, -50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 24px 0 24px 36px;
+        border-color: transparent transparent transparent #547ebc;
+        box-sizing: border-box;
+        outline: none; }
+      @media (min-width: 320px) and (max-width: 960px) {
+        .video .controls .play-button {
+          width: 50px;
+          height: 50px; }
+          .video .controls .play-button::before {
+            border-width: 12px 0 12px 16px; } }
+  .video .controls.active {
+    opacity: 1; }
 
 .demonstration {
   padding: 50px 0; }
@@ -1155,26 +1271,42 @@ header, footer {
       .reviews .card .img-ct img {
         width: 100%; }
     .reviews .card .text-ct {
+      position: relative;
       width: 50%; }
       @media (min-width: 320px) and (max-width: 768px) {
         .reviews .card .text-ct {
           width: 100%;
           order: 1;
           margin: 0 0 20px; } }
-      .reviews .card .text-ct .caption {
+      .reviews .card .text-ct h3 {
         color: #547ebc;
-        font-family: 'latobold', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-size: 22px;
         font-weight: 700;
         margin: 0 0 12px; }
         @media (min-width: 320px) and (max-width: 768px) {
-          .reviews .card .text-ct .caption {
+          .reviews .card .text-ct h3 {
             text-align: center; } }
       .reviews .card .text-ct .desc {
         color: #1d1d1d;
-        font-family: 'latoregular', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-size: 16px;
-        font-weight: 400; }
+        font-weight: 400;
+        margin: 0 0 15px; }
+  .reviews .hidden-card {
+    position: relative;
+    z-index: -1;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    transition: .3s; }
+  .reviews .overlay-block {
+    background: linear-gradient(to top, #ffffff 40%, rgba(255, 255, 255, 0) 100%, white 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
   .reviews .btn-ct button {
     display: block;
     margin: 0 auto;
@@ -1182,7 +1314,7 @@ header, footer {
     box-shadow: 0 6px 6px rgba(255, 222, 0, 0.29);
     background-color: #ffde00;
     color: #1d1d1d;
-    font-family: 'latobold', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: 700;
     border: none;
@@ -1233,7 +1365,7 @@ header, footer {
     display: block;
     margin: 0 auto;
     color: #1d1d1d;
-    font-family: 'latobold', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: 700;
     box-shadow: 0 6px 6px rgba(255, 222, 0, 0.29);
@@ -1349,9 +1481,9 @@ header, footer {
         margin: 0; } }
     .order .text-ct h2 {
       color: #ffffff;
-      font-family: 'latoblack', sans-serif;
+      font-family: 'Lato', sans-serif;
       font-size: 40px;
-      font-weight: 400;
+      font-weight: 900;
       margin: 0 0 60px; }
       @media (min-width: 320px) and (max-width: 667px) {
         .order .text-ct h2 {
@@ -1359,7 +1491,7 @@ header, footer {
           text-align: center; } }
     .order .text-ct .order_desc {
       color: #1d1d1d;
-      font-family: 'latoregular', sans-serif;
+      font-family: 'Lato', sans-serif;
       font-size: 18px;
       font-weight: 400;
       text-align: center;
@@ -1386,7 +1518,7 @@ header, footer {
     text-align: center;
     font-weight: 400;
     color: #1d1d1d;
-    font-family: 'latoregular', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0 0 75px; }
     @media (min-width: 320px) and (max-width: 768px) {
       .delivery .desc_2 {
@@ -1432,7 +1564,7 @@ header, footer {
     margin: 0 0 25px; }
   .contact p {
     color: #1d1d1d;
-    font-family: 'latoregular', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 400;
     margin: 0 0 35px;
