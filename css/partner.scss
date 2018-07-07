@@ -1,5 +1,8 @@
 .partner {
   padding: 40px 0 40px;
+  @media (min-width: 320px) and (max-width: 767px) {
+    padding: 0 0 40px;
+  }
   h2 {
     @extend %h2;
   }
@@ -12,6 +15,9 @@
       justify-content: center;
       width: 90%;
       margin: 0 auto 50px;
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+      margin: 0 auto 20px;
     }
   }
   .img-ct {
@@ -32,7 +38,7 @@
     }
     img {
       align-self: center;
-      @media (min-width: 320px) and (max-width: 667px) {
+      @media (min-width: 320px) and (max-width: 425px) {
         width: 90%;
       }
     }

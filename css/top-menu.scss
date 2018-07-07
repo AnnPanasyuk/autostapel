@@ -11,12 +11,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 4;
+    z-index: 5;
     @media screen and (min-width: 1024px){
       display: none;
     }
-    @media screen and (min-width: 768px){
-      right: 0!important;
+    @media screen and (max-width: 768px){
+      right: 0;
+      left: calc(100% - 85px);
     }
     #nav-icon3 {
       width: 40px;
@@ -32,6 +33,9 @@
       cursor: pointer;
       @media (min-width: 320px) and (max-width: 1023px) {
         margin: 24px 15px;
+      }
+      @media (min-width: 320px) and (max-width: 767px) {
+        margin: 22px 15px;
       }
       @media (min-width: 320px) and (max-width: 320px) {
         margin: 40px 20px 0 0;
@@ -130,7 +134,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      z-index: 3;
+      z-index: 4;
       padding: 20px 0;
       width: 100%;
       background-color: #ffffff;

@@ -1,5 +1,8 @@
 .delivery {
   padding: 50px 0 0;
+  @media (min-width: 320px) and (max-width: 767px) {
+    padding: 0;
+  }
   h2 {
     @extend %h2;
     margin: 0 0 20px;
@@ -15,6 +18,10 @@
       font-weight: 400;
       color: #547ebc;
     }
+    @media (min-width: 320px) and (max-width: 767px) {
+      font-size: 18px;
+      margin: 0;
+    }
   }
   .desc_2 {
     text-align: center;
@@ -24,6 +31,9 @@
     margin: 0 0 75px;
     @media (min-width: 320px) and (max-width: 768px) {
       margin: 0 0 40px;
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+      font-size: 18px;
     }
   }
   .flex-ct {
@@ -51,14 +61,20 @@
     @media (min-width: 320px) and (max-width: 1024px) {
       margin: 0 20px 30px;
     }
-    @media (min-width: 320px) and (max-width: 667px) {
+    @media (min-width: 320px) and (max-width: 767px) {
       margin: 0 5px 10px;
+      height: 110px;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      height: 100px;
       width: 45%;
-      height: 70px;
+    }
+    @media (min-width: 320px) and (max-width: 375px) {
+      height: 80px;
     }
     img {
       align-self: center;
-      @media (min-width: 320px) and (max-width: 667px) {
+      @media (min-width: 320px) and (max-width: 480px) {
         width: 90%;
       }
     }

@@ -1,5 +1,8 @@
 .advantages {
   padding: 50px 0 40px;
+  @media (min-width: 320px) and (max-width: 767px) {
+    padding: 0 0 25px;
+  }
   h2 {
    @extend %h2;
   }
@@ -35,6 +38,9 @@
     .text-ct {
       @media (min-width: 320px) and (max-width: 1024px) {
         width: 75%;
+      }
+      @media (min-width: 320px) and (max-width: 767px) {
+        width: calc(100% - 195px);
       }
     }
   }
@@ -85,6 +91,9 @@
       font-size: 18px;
       font-weight: 700;
       line-height: 18px;
+      @media (min-width: 320px) and (max-width: 1024px) {
+        font-size: 16px;
+      }
     }
     .desc {
       color: #1d1d1d;
@@ -137,10 +146,16 @@
   .line-3 {
     top: 49%;
     right: -46px;
+    @media (min-width: 320px) and (max-width: 1024px) {
+      right: -36px;
+    }
   }
   .line-4 {
     top: 49%;
     left: -46px;
+    @media (min-width: 320px) and (max-width: 1024px) {
+      left: -36px;
+    }
   }
   .line-5 {
     top: 0;
@@ -155,6 +170,24 @@
   .flex-ct {
     @media (min-width: 320px) and (max-width: 768px) {
       margin: 0;
+    }
+  }
+  .adv-ct {
+    @media (min-width: 320px) and (max-width: 480px) {
+      flex-wrap: wrap;
+      margin: 0 0 20px;
+      .text-ct {
+        order: 2;
+        width: 100%;
+        p {
+          text-align: center;
+        }
+      }
+      .img-ct {
+        order: 1;
+        width: 60%;
+        margin: 0 auto 10px;
+      }
     }
   }
 }

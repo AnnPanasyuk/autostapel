@@ -52,10 +52,13 @@
       justify-content: center;
       box-shadow: 0 22px 46px rgba(20, 20, 20, 0.13);
       background-color: #ffffff;
-      @media (min-width: 320px) and (max-width: 768px) {
-        height: 325px;
+      @media (min-width: 320px) and (max-width: 1024px) {
+        height: 315px;
       }
-      @media (min-width: 320px) and (max-width: 480px) {
+      @media (min-width: 320px) and (max-width: 767px) {
+        height: 280px;
+      }
+      @media (min-width: 320px) and (max-width: 667px) {
         height: 170px;
       }
       img {
@@ -65,49 +68,9 @@
       .st-img-3 {
         height: 100%;
       }
-      //.st-img-1 {
-      //  width: 341px;
-      //  height: 290px;
-      //  @media (min-width: 320px) and (max-width: 768px) {
-      //    width: 269px;
-      //    height: 229px;
-      //  }
-      //}
-      //.st-img-2 {
-      //  width: 342px;
-      //  height: 300px;
-      //  @media (min-width: 320px) and (max-width: 768px) {
-      //    width: 270px;
-      //    height: 237px;
-      //  }
-      //}
-      //.st-img-3 {
-      //  width: 288px;
-      //  height: 270px;
-      //  @media (min-width: 320px) and (max-width: 768px) {
-      //    width: 227px;
-      //    height: 213px;
-      //  }
-      //}
-      //.st-img-4 {
-      //  width: 314px;
-      //  height: 259px;
-      //  @media (min-width: 320px) and (max-width: 768px) {
-      //    width: 248px;
-      //    height: 204px;
-      //  }
-      //}
-      //.st-img-5 {
-      //  width: 343px;
-      //  height: 321px;
-      //  @media (min-width: 320px) and (max-width: 768px) {
-      //    width: 270px;
-      //    height: 253px;
-      //  }
-      //}
     }
     .desc-ct {
-      width: 280px;
+      width: 100%;
       height: 60px;
       display: flex;
       justify-content: center;
@@ -117,7 +80,7 @@
       @media (min-width: 320px) and (max-width: 768px) {
         width: 100%;
       }
-      @media (min-width: 320px) and (max-width: 480px) {
+      @media (min-width: 320px) and (max-width: 767px) {
         height: 50px;
       }
       a {
@@ -128,7 +91,10 @@
         font-weight: 700;
         text-align: center;
         text-decoration: none;
-        @media (min-width: 320px) and (max-width: 480px) {
+        @media (min-width: 320px) and (max-width: 1024px) {
+          font-size: 16px;
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
           font-size: 14px;
         }
       }
@@ -137,9 +103,6 @@
   .btn-ct {
     display: flex;
     justify-content: center;
-    @media (min-width: 320px) and (max-width: 767px) {
-      margin: 45px 0 0;
-    }
     a {
       text-decoration: none;
       box-shadow: 0 6px 6px rgba(255, 222, 0, 0.29);

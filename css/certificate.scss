@@ -1,6 +1,9 @@
 .certificate {
   padding: 45px 0 40px;
   position: relative;
+  @media (min-width: 320px) and (max-width: 767px) {
+    padding: 0 0 40px;
+  }
   h2 {
     @extend %h2;
   }
@@ -8,6 +11,9 @@
     @media (min-width: 320px) and (max-width: 768px) {
       width: 270px;
       margin: 0 auto;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      width: 100%;
     }
   }
   a {

@@ -1,7 +1,7 @@
 .reviews {
   padding: 50px 0 40px;
-  @media (min-width: 320px) and (max-width: 667px) {
-    padding: 15px 0 30px;
+  @media (min-width: 320px) and (max-width: 767px) {
+    padding: 35px 0 20px;
   }
   h2 {
     @extend %h2;
@@ -15,17 +15,24 @@
     box-shadow: 0 22px 46px rgba(20, 20, 20, 0.13);
     background-color: #ffffff;
     padding: 35px 40px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     @media (min-width: 320px) and (max-width: 768px) {
       flex-wrap: wrap;
       width: auto;
     }
+    @media (min-width: 320px) and (max-width: 767px) {
+      padding: 15px 20px;
+    }
     .img-ct {
       width: 45%;
       @media (min-width: 320px) and (max-width: 768px) {
         order: 2;
         margin: 0 auto;
+      }
+      @media (min-width: 320px) and (max-width: 767px) {
+        width: 250px;
       }
       img {
         width: 100%;
@@ -48,6 +55,9 @@
         @media (min-width: 320px) and (max-width: 768px) {
           text-align: center;
         }
+        @media (min-width: 320px) and (max-width: 767px) {
+          font-size: 20px;
+        }
       }
       .desc {
         color: #1d1d1d;
@@ -55,6 +65,9 @@
         font-size: 16px;
         font-weight: 400;
         margin: 0 0 15px;
+        @media (min-width: 320px) and (max-width: 767px) {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -66,6 +79,7 @@
     padding: 0;
     opacity: 0;
     transition: .3s;
+    margin: 0;
   }
 
   .overlay-block {

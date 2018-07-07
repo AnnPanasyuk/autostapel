@@ -22,6 +22,10 @@
     font-weight: 700;
     text-align: center;
     margin: 15px 0 55px;
+    @media (min-width: 320px) and (max-width: 767px) {
+      font-size: 18px;
+      margin: 0 0 40px;
+    }
   }
   .video-ct {
     position: relative;
@@ -48,6 +52,7 @@
       }
       @media (min-width: 320px) and (max-width: 375px) {
         height: 200px;
+        width: 100%;
       }
     }
   }
@@ -58,6 +63,10 @@
     font-weight: 700;
     margin: 20px 0 55px;
     text-align: center;
+    @media (min-width: 320px) and (max-width: 767px) {
+      font-size: 18px;
+      margin: 10px 0 40px;
+    }
   }
   .controls {
     opacity: 0;

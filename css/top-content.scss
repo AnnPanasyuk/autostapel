@@ -6,7 +6,7 @@
     padding: 60px 0 50px;
   }
   @media (min-width: 320px) and (max-width: 767px) {
-    padding: 35px 0 50px;
+    padding: 30px 0 20px;
   }
   h2 {
     text-align: center;
@@ -37,8 +37,9 @@
       font-size: 30px;
       font-weight: 300;
       line-height: 16px;
-      @media (min-width: 320px) and (max-width: 480px) {
-        margin: 15px 0 40px;
+      @media (min-width: 320px) and (max-width: 767px) {
+        margin: 10px 0 20px;
+        font-size: 24px;
         line-height: 1.2;
       }
     }
@@ -47,8 +48,8 @@
       @media (min-width: 320px) and (max-width: 768px) {
         margin: 0 0 100px;
       }
-      @media (min-width: 320px) and (max-width: 667px) {
-        margin: 0 0 20px;
+      @media (min-width: 320px) and (max-width: 767px) {
+        margin: 0 0 15px;
       }
       ul {
         display: flex;
@@ -63,18 +64,26 @@
             width: 45%;
             margin: 0 10px 20px;
           }
+          @media (min-width: 320px) and (max-width: 767px) {
+            margin-bottom: 10px;
+          }
           @media (min-width: 320px) and (max-width: 480px) {
             width: 100%;
           }
           svg {
             fill: #547ebc;
             margin: 0 2px 0 0;
+            align-self: center;
           }
           p {
             color: #212121;
             font-family: 'latosemibold', sans-serif;
             font-size: 18px;
             font-weight: 400;
+            @media (min-width: 320px) and (max-width: 767px) {
+              align-self: center;
+              font-size: 16px;
+            }
           }
         }
       }
@@ -98,11 +107,12 @@
       box-shadow: 0 22px 46px rgba(20, 20, 20, 0.13);
       display: flex;
       padding: 0 0 28px;
+      border-radius: 5px;
       flex-direction: column;
       @media (min-width: 320px) and (max-width: 960px) {
         width: 340px;
       }
-      @media (min-width: 320px) and (max-width: 667px) {
+      @media (min-width: 320px) and (max-width: 767px) {
         margin: 0 auto;
       }
       @media (min-width: 320px) and (max-width: 375px) {
@@ -118,6 +128,9 @@
           font-family: 'Lato', sans-serif;
           font-size: 20px;
           font-weight: 900;
+          @media (min-width: 320px) and (max-width: 767px) {
+            font-size: 18px;
+          }
         }
       }
       .term {
@@ -128,7 +141,7 @@
         font-size: 42px;
         font-weight: 900;
         margin: 33px 0 25px;
-        @media (min-width: 320px) and (max-width: 667px) {
+        @media (min-width: 320px) and (max-width: 767px) {
           font-size: 36px;
         }
       }
@@ -171,7 +184,7 @@
     @media (min-width: 320px) and (max-width: 768px) {
       bottom: 50px;
     }
-    @media (min-width: 320px) and (max-width: 667px) {
+    @media (min-width: 320px) and (max-width: 767px) {
       display: none;
     }
     img {

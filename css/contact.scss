@@ -11,6 +11,9 @@
     font-weight: 400;
     margin: 0 0 35px;
     text-align: center;
+    @media (min-width: 320px) and (max-width: 767px) {
+      font-size: 18px;
+    }
   }
   .map {
     width: 100%;
