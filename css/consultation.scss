@@ -3,254 +3,258 @@
   padding: 0 0 27px;
   .top-other-color-block {
     background-color: #547ebc;
-    height: 106px;
-    @media (min-width: 769px) and (max-width: 960px) {
-      height: 160px;
-    }
-    @media (min-width: 320px) and (max-width: 425px) {
-      height: 170px;
-    }
+    position:  absolute;
+    height: 100%;
+    top: -20px;
+    padding: 20px 0;
+    right: -300%;
+    left: -330%;
+    z-index: -1;
   }
-  .flex-ct {
-    width: 90%;
-    margin: -135px auto 0;
-    display: flex;
-    justify-content: space-between;
-    @media (min-width: 320px) and (max-width: 1366px) {
-      width: 100%;
-    }
-    @media (min-width: 320px) and (max-width: 1024px) {
-      flex-wrap: wrap;
-    }
-    @media (min-width: 769px) and (max-width: 960px) {
-      margin: -170px auto 0;
-    }
-    @media (min-width: 320px) and (max-width: 425px) {
-      margin: -153px auto 0;
-    }
-  }
-  .left-ct {
-    width: 44%;
-    display: flex;
-    flex-direction: column;
-    @media (min-width: 320px) and (max-width: 1024px) {
-      order: 2;
-      width: 35%;
-      margin: -165px 0 0;
-    }
-    @media (min-width: 320px) and (max-width: 960px) {
-      margin: -120px 0 0;
-    }
-    @media (min-width: 320px) and (max-width: 768px) {
-      margin: -340px 0 0;
-    }
-    @media (min-width: 320px) and (max-width: 667px) {
-      margin: 30px auto 0;
-      width: 50%;
-    }
-    @media (min-width: 320px) and (max-width: 375px) {
-      width: 100%;
-    }
-    img {
-      width: 100%;
-    }
-    .desc-ct {
-      align-self: center;
-      box-shadow: 0 16px 51px rgba(84, 126, 188, 0.23);
-      background-color: #ffffff;
-      border-radius: 55px;
-      margin: -130px 0 0;
-      padding: 30px 40px;
-      @media (min-width: 320px) and (max-width: 1024px) {
-        padding: 20px 40px;
-      }
-      @media (min-width: 678px) and (max-width: 768px) {
-        margin: -70px auto 0;
-        padding: 20px 15px;
-      }
-      p {
-        color: #202020;
-        font-family: 'Lato', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
-        &:first-child {
-          color: #202020;
-          font-family: 'Lato', sans-serif;
-          font-size: 20px;
-          font-weight: 700;
-          line-height: 20px;
-        }
-        @media (min-width: 320px) and (max-width: 768px) {
-          text-align: center;
-        }
-      }
-    }
-  }
-  .right-ct {
-    width: 50%;
-    padding: 50px 0 0 25px;
-    box-sizing: border-box;
-    @media (min-width: 320px) and (max-width: 1024px) {
-      order: 1;
-      width: 100%;
+    .flex-ct {
+      width: 90%;
+      margin: 0 auto 0;
       display: flex;
       justify-content: space-between;
-      padding: 50px 0 0;
-    }
-    @media (min-width: 320px) and (max-width: 425px) {
-      padding: 0;
-    }
-    @media (min-width: 320px) and (max-width: 768px) {
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-    .text-ct {
-      @media (min-width: 320px) and (max-width: 768px) {
+      @media (min-width: 320px) and (max-width: 1366px) {
         width: 100%;
       }
-      h2 {
-        color: #ffffff;
-        line-height: 35px;
-        font-family: 'Lato', sans-serif;
-        font-size: 40px;
-        font-weight: 900;
-        margin: 0 0 30px;
-        @media (min-width: 320px) and (max-width: 667px) {
-          font-size: 36px;
-          text-align: center;
-        }
-        span {
-          font-family: 'Lato', sans-serif;
-          font-size: 30px;
-          font-weight: 300;
-          @media (min-width: 320px) and (max-width: 667px) {
-            font-size: 26px;
-          }
-        }
+      @media (min-width: 320px) and (max-width: 1024px) {
+        flex-wrap: wrap;
       }
-      ul {
-        li {
-          display: flex;
-          margin: 10px 0;
-          .number {
-            margin: 0 10px 0 0;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            box-shadow: 0 3px 8px rgba(84, 126, 188, 0.3);
-            border: 1px solid #547ebc;
-            background-color: #ffffff;
-            color: #547ebc;
-            font-family: 'latoheavy', sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            text-align: center;
-            line-height: 24px;
-          }
-          .desc {
-            color: #1d1d1d;
-            align-self: center;
-            font-family: 'Lato', sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 18px;
-            width: calc(100% - 34px);
-          }
-        }
+      @media (min-width: 769px) and (max-width: 960px) {
+        margin: -170px auto 0;
+      }
+      @media (min-width: 320px) and (max-width: 425px) {
+        margin: -153px auto 0;
       }
     }
-    .form-ct {
-      @extend %form;
-      margin: 45px 0 0;
-      @media (min-width: 320px) and (max-width: 667px) {
-        display: block;
-        margin: 0 auto;
+    .left-ct {
+      width: 44%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 2;
+      @media (min-width: 320px) and (max-width: 1024px) {
+        order: 2;
+        width: 35%;
+        margin: -165px 0 0;
       }
-    }
-  }
-  .card-percent {
-    margin: 160px auto 0;
-    position: relative;
-    box-shadow: 0 22px 46px rgba(20, 20, 20, 0.13);
-    background-color: #ffffff;
-    border-radius: 5px;
-    width: 90%;
-    padding: 35px 70px;
-    box-sizing: border-box;
-    @media (min-width: 320px) and (max-width: 1024px) {
-      margin: 50px auto 0;
-    }
-    @media (min-width: 320px) and (max-width: 667px) {
-      margin: 70px auto 0;
-      padding: 25px 40px;
-    }
-    p {
-      width: 60%;
-      color: #1d1d1d;
-      font-family: 'Lato', sans-serif;
-      font-size: 30px;
-      font-weight: 400;
-      line-height: 35px;
-      @media (min-width: 320px) and (max-width: 667px) {
-        width: 75%;
-        font-size: 22px;
-        line-height: 1.2;
-      }
-      @media (min-width: 320px) and (max-width: 375px) {
-        width: 100%;
-      }
-      span {
-        color: #547ebc;
-        font-family: 'Lato', sans-serif;
-        font-weight: 900;
-      }
-    }
-    .img-ct {
-      position: absolute;
-      top: -70px;
-      right: 0;
-      width: 335px;
-      height: 336px;
       @media (min-width: 320px) and (max-width: 960px) {
-        width: 280px;
-        height: 280px;
-        top: -30px;
+        margin: -120px 0 0;
+      }
+      @media (min-width: 320px) and (max-width: 768px) {
+        margin: -340px 0 0;
       }
       @media (min-width: 320px) and (max-width: 667px) {
-        width: 150px;
-        height: 150px;
+        margin: 30px auto 0;
+        width: 50%;
       }
       @media (min-width: 320px) and (max-width: 375px) {
-        display: none;
+        width: 100%;
       }
       img {
         width: 100%;
       }
-      .percent-text {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
+      .desc-ct {
+        align-self: center;
+        box-shadow: 0 16px 51px rgba(84, 126, 188, 0.23);
+        background-color: #ffffff;
+        border-radius: 55px;
+        margin: -130px 0 0;
+        padding: 30px 40px;
+        @media (min-width: 320px) and (max-width: 1024px) {
+          padding: 20px 40px;
+        }
+        @media (min-width: 678px) and (max-width: 768px) {
+          margin: -70px auto 0;
+          padding: 20px 15px;
+        }
         p {
-          position: absolute;
-          top: 44%;
-          left: 45%;
-          transform: translate(-50%, -50%);
-          text-align: center;
+          color: #202020;
+          font-family: 'Lato', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+          &:first-child {
+            color: #202020;
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 20px;
+          }
+          @media (min-width: 320px) and (max-width: 768px) {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .right-ct {
+      width: 50%;
+      padding: 50px 0 0 25px;
+      box-sizing: border-box;
+      @media (min-width: 320px) and (max-width: 1024px) {
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0 0;
+      }
+      @media (min-width: 320px) and (max-width: 425px) {
+        padding: 0;
+      }
+      @media (min-width: 320px) and (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+      .text-ct {
+        @media (min-width: 320px) and (max-width: 768px) {
+          width: 100%;
+        }
+        h2 {
+          position: relative;
+          z-index: 1;
+          color: #ffffff;
+          line-height: 35px;
+          font-family: 'Lato', sans-serif;
+          font-size: 40px;
+          font-weight: 900;
+          margin: 0 0 30px;
+          @media (min-width: 320px) and (max-width: 667px) {
+            font-size: 36px;
+            text-align: center;
+          }
+          span {
+            font-family: 'Lato', sans-serif;
+            font-size: 30px;
+            font-weight: 300;
+            @media (min-width: 320px) and (max-width: 667px) {
+              font-size: 26px;
+            }
+          }
+        }
+        ul {
+          li {
+            display: flex;
+            margin: 10px 0;
+            .number {
+              margin: 0 10px 0 0;
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              box-shadow: 0 3px 8px rgba(84, 126, 188, 0.3);
+              border: 1px solid #547ebc;
+              background-color: #ffffff;
+              color: #547ebc;
+              font-family: 'latoheavy', sans-serif;
+              font-size: 14px;
+              font-weight: 400;
+              text-align: center;
+              line-height: 24px;
+            }
+            .desc {
+              color: #1d1d1d;
+              align-self: center;
+              font-family: 'Lato', sans-serif;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 18px;
+              width: calc(100% - 34px);
+            }
+          }
+        }
+      }
+      .form-ct {
+        @extend %form;
+        margin: 45px 0 0;
+        @media (min-width: 320px) and (max-width: 667px) {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    .card-percent {
+      margin: 160px auto 0;
+      position: relative;
+      box-shadow: 0 22px 46px rgba(20, 20, 20, 0.13);
+      background-color: #ffffff;
+      border-radius: 5px;
+      width: 90%;
+      padding: 35px 70px;
+      box-sizing: border-box;
+      @media (min-width: 320px) and (max-width: 1024px) {
+        margin: 50px auto 0;
+      }
+      @media (min-width: 320px) and (max-width: 667px) {
+        margin: 70px auto 0;
+        padding: 25px 40px;
+      }
+      p {
+        width: 60%;
+        color: #1d1d1d;
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35px;
+        @media (min-width: 320px) and (max-width: 667px) {
+          width: 75%;
+          font-size: 22px;
+          line-height: 1.2;
+        }
+        @media (min-width: 320px) and (max-width: 375px) {
+          width: 100%;
+        }
+        span {
           color: #547ebc;
           font-family: 'Lato', sans-serif;
-          font-size: 110px;
           font-weight: 900;
-          @media (min-width: 320px) and (max-width: 960px) {
-            font-size: 70px;
-          }
-          @media (min-width: 320px) and (max-width: 667px) {
-            font-size: 30px;
+        }
+      }
+      .img-ct {
+        position: absolute;
+        top: -70px;
+        right: 0;
+        width: 335px;
+        height: 336px;
+        @media (min-width: 320px) and (max-width: 960px) {
+          width: 280px;
+          height: 280px;
+          top: -30px;
+        }
+        @media (min-width: 320px) and (max-width: 667px) {
+          width: 150px;
+          height: 150px;
+        }
+        @media (min-width: 320px) and (max-width: 375px) {
+          display: none;
+        }
+        img {
+          width: 100%;
+        }
+        .percent-text {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          p {
+            position: absolute;
+            top: 44%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #547ebc;
+            font-family: 'Lato', sans-serif;
+            font-size: 110px;
+            font-weight: 900;
+            @media (min-width: 320px) and (max-width: 960px) {
+              font-size: 70px;
+            }
+            @media (min-width: 320px) and (max-width: 667px) {
+              font-size: 30px;
+            }
           }
         }
       }
     }
   }
-}

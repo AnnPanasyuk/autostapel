@@ -33,7 +33,7 @@ img {
   @media (min-width: 320px) and (max-width: 667px) {
     .advantages h2, .catalog h2, .video h2, .demonstration h2, .reviews h2, .partner h2, .certificate h2, .delivery h2, .contact h2 {
       font-size: 30px; } }
-  @media (min-width: 320px) and (max-width: 667px) {
+  @media (min-width: 320px) and (max-width: 480px) {
     .advantages h2, .catalog h2, .video h2, .demonstration h2, .reviews h2, .partner h2, .certificate h2, .delivery h2, .contact h2 {
       font-size: 26px; } }
 
@@ -94,6 +94,9 @@ header, footer {
   @media (min-width: 320px) and (max-width: 425px) {
     header, footer {
       padding: 5px 0; } }
+  @media (min-width: 320px) and (max-width: 768px) {
+    header .container, footer .container {
+      width: 84%; } }
   header .flex-ct, footer .flex-ct {
     display: flex;
     justify-content: space-between; }
@@ -366,14 +369,20 @@ header, footer {
   background-color: #2373B0;
   background-image: linear-gradient(to bottom, #2373B0 0%, #3C5C97 100%);
   width: 100%; }
+  @media (min-width: 320px) and (max-width: 1024px) {
+    .top-menu .container {
+      width: 95%; } }
   .top-menu .toggle {
     position: absolute;
     top: 0;
-    right: 0;
-    z-index: 1; }
-    @media screen and (min-width: 767px) {
+    left: 0;
+    z-index: 4; }
+    @media screen and (min-width: 1024px) {
       .top-menu .toggle {
         display: none; } }
+    @media screen and (min-width: 768px) {
+      .top-menu .toggle {
+        right: 0 !important; } }
     .top-menu .toggle #nav-icon3 {
       width: 40px;
       height: 29px;
@@ -386,6 +395,9 @@ header, footer {
       -o-transition: .5s ease-in-out;
       transition: .5s ease-in-out;
       cursor: pointer; }
+      @media (min-width: 320px) and (max-width: 1023px) {
+        .top-menu .toggle #nav-icon3 {
+          margin: 24px 15px; } }
       @media (min-width: 320px) and (max-width: 320px) {
         .top-menu .toggle #nav-icon3 {
           margin: 40px 20px 0 0; } }
@@ -429,7 +441,7 @@ header, footer {
       left: 50%; }
   .top-menu .menu-ct {
     display: block; }
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 1024px) {
       .top-menu .menu-ct {
         display: none; } }
   .top-menu .hidden {
@@ -455,17 +467,18 @@ header, footer {
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s;
-      padding: 20px 19px 11px;
+      padding: 21px 19px 17px;
       position: relative; }
       .top-menu .nav .nav-item:hover {
         color: #000;
         background: #F1CA07;
         background-image: linear-gradient(to bottom, #F1CA07 0%, #E39A24 100%); }
-    @media (min-width: 320px) and (max-width: 768px) {
+    @media (min-width: 320px) and (max-width: 1023px) {
       .top-menu .nav {
         position: absolute;
         top: 0;
         right: 0;
+        z-index: 3;
         padding: 20px 0;
         width: 100%;
         background-color: #ffffff;
@@ -480,17 +493,31 @@ header, footer {
         flex-direction: column; }
         .top-menu .nav .nav-item {
           color: #2373B0;
-          border: none; } }
+          border: none; }
+        .top-menu .nav .link-phone-ct {
+          margin: 0 auto; }
+        .top-menu .nav .link-phone {
+          color: #ffffff; } }
   .top-menu .link-phone-ct {
-    height: 100%;
-    margin: 0 0 0 15px;
+    text-decoration: none;
+    margin: 9px 0 0 15px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    width: 188px;
+    height: 45px;
+    transition: .3s;
+    cursor: pointer;
+    background: url("../img/button-0.png") no-repeat; }
     .top-menu .link-phone-ct:hover {
-      color: #000;
-      background: #F1CA07;
-      background-image: linear-gradient(to bottom, #F1CA07 0%, #E39A24 100%); }
+      background-position: 0 -45px; }
+      .top-menu .link-phone-ct:hover .link-phone {
+        border: 2px dotted transparent;
+        background-color: transparent !important;
+        background-image: none !important; }
+    .top-menu .link-phone-ct:active {
+      background-position: 0 -90px; }
   .top-menu .link-phone {
+    border-left: none !important;
     align-self: center;
     position: relative;
     overflow: hidden;
@@ -504,7 +531,7 @@ header, footer {
   @media (min-width: 320px) and (max-width: 960px) {
     .top-content {
       padding: 60px 0 50px; } }
-  @media (min-width: 320px) and (max-width: 667px) {
+  @media (min-width: 320px) and (max-width: 767px) {
     .top-content {
       padding: 35px 0 50px; } }
   .top-content h2 {
@@ -661,16 +688,16 @@ header, footer {
   padding: 0 0 27px; }
   .consultation .top-other-color-block {
     background-color: #547ebc;
-    height: 106px; }
-    @media (min-width: 769px) and (max-width: 960px) {
-      .consultation .top-other-color-block {
-        height: 160px; } }
-    @media (min-width: 320px) and (max-width: 425px) {
-      .consultation .top-other-color-block {
-        height: 170px; } }
+    position: absolute;
+    height: 100%;
+    top: -20px;
+    padding: 20px 0;
+    right: -300%;
+    left: -330%;
+    z-index: -1; }
   .consultation .flex-ct {
     width: 90%;
-    margin: -135px auto 0;
+    margin: 0 auto 0;
     display: flex;
     justify-content: space-between; }
     @media (min-width: 320px) and (max-width: 1366px) {
@@ -688,7 +715,9 @@ header, footer {
   .consultation .left-ct {
     width: 44%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative;
+    z-index: 2; }
     @media (min-width: 320px) and (max-width: 1024px) {
       .consultation .left-ct {
         order: 2;
@@ -760,6 +789,8 @@ header, footer {
       .consultation .right-ct .text-ct {
         width: 100%; } }
     .consultation .right-ct .text-ct h2 {
+      position: relative;
+      z-index: 1;
       color: #ffffff;
       line-height: 35px;
       font-family: 'Lato', sans-serif;

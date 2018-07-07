@@ -40,7 +40,7 @@ img {
   @media (min-width: 320px) and (max-width: 667px) {
     font-size: 30px;
   }
-  @media (min-width: 320px) and (max-width: 667px) {
+  @media (min-width: 320px) and (max-width: 480px) {
     font-size: 26px;
   }
 }
@@ -109,6 +109,11 @@ img {
   padding: 18px 0 20px;
   @media (min-width: 320px) and (max-width: 425px) {
     padding: 5px 0;
+  }
+  .container {
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 84%;
+    }
   }
   .flex-ct {
     display: flex;

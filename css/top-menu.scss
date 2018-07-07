@@ -2,13 +2,21 @@
   background-color: #2373B0;
   background-image: linear-gradient(to bottom, #2373B0 0%, #3C5C97 100%);
   width: 100%;
+  .container {
+    @media (min-width: 320px) and (max-width: 1024px) {
+      width: 95%;
+    }
+  }
   .toggle {
     position: absolute;
     top: 0;
-    right: 0;
-    z-index: 1;
-    @media screen and (min-width: 767px){
+    left: 0;
+    z-index: 4;
+    @media screen and (min-width: 1024px){
       display: none;
+    }
+    @media screen and (min-width: 768px){
+      right: 0!important;
     }
     #nav-icon3 {
       width: 40px;
@@ -22,6 +30,9 @@
       -o-transition: .5s ease-in-out;
       transition: .5s ease-in-out;
       cursor: pointer;
+      @media (min-width: 320px) and (max-width: 1023px) {
+        margin: 24px 15px;
+      }
       @media (min-width: 320px) and (max-width: 320px) {
         margin: 40px 20px 0 0;
       }
@@ -78,7 +89,7 @@
   }
   .menu-ct {
     display: block;
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 1024px) {
       display: none;
     }
   }
@@ -107,7 +118,7 @@
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s;
-      padding: 20px 19px 11px;
+      padding: 21px 19px 17px;
       position: relative;
       &:hover {
         color: #000;
@@ -115,10 +126,11 @@
         background-image: linear-gradient(to bottom, #F1CA07 0%, #E39A24 100%);
       }
     }
-    @media (min-width: 320px) and (max-width: 768px) {
+    @media (min-width: 320px) and (max-width: 1023px) {
       position: absolute;
       top: 0;
       right: 0;
+      z-index: 3;
       padding: 20px 0;
       width: 100%;
       background-color: #ffffff;
@@ -135,20 +147,38 @@
         color: #2373B0;
         border: none;
       }
+      .link-phone-ct {
+        margin: 0 auto;
+      }
+      .link-phone {
+        color: #ffffff;
+      }
     }
   }
   .link-phone-ct {
-    height: 100%;
-    margin: 0 0 0 15px;
+    text-decoration: none;
+    margin: 9px 0 0 15px;
     display: flex;
     justify-content: center;
+    width: 188px;
+    height: 45px;
+    transition: .3s;
+    cursor: pointer;
+    background: url("../img/button-0.png") no-repeat;
     &:hover {
-      color: #000;
-      background: #F1CA07;
-      background-image: linear-gradient(to bottom, #F1CA07 0%, #E39A24 100%);
+      background-position: 0 -45px;
+      .link-phone {
+        border: 2px dotted transparent;
+        background-color: transparent!important;
+        background-image: none!important;
+      }
+    }
+    &:active {
+      background-position: 0 -90px;
     }
   }
   .link-phone {
+    border-left: none!important;
     align-self: center;
     position: relative;
     overflow: hidden;
